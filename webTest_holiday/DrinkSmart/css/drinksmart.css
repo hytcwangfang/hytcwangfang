@@ -1,0 +1,76 @@
+*{ margin: 0 auto; padding: 0;}
+ul,li{list-style: none;}
+a{ text-decoration: none;}
+img{border: 0;}
+
+/*顶部第一栏*/
+#top1{ width: 1000px; height: 26px;}
+#top1content{ width: 170px; height: 26px; float: right; }
+.top1pic{padding-top: 4px; padding-right: 10px; float: left; }
+#top1content span{ display: block; float: right; width: 140px; height: 26px; line-height: 26px; font-size: 14px; color: rgb(100, 24, 51);}
+
+/*顶部第二栏*/
+#top2{ width: 960px; height: 85px; }
+#top2left{ width: 630px; height: 85px; float: left;}
+#top2right{ width: 330px; height: 85px; float: right;}
+
+/*第三栏导航栏*/
+#menu{ width: 960px; height: 40px; padding-top: 20px;}
+#menu li{ float: left; padding-right: 5px;}
+.menutxt{ display: block; width: 132px; height: 40px;text-align: center; border-top-left-radius: 8px;border-top-right-radius: 8px;background-color: rgb(160, 163, 166);box-shadow: rgba(0, 0, 0, 0.4) 1px 0px 1px 0px; line-height: 20px;color: #fff; font-size: 13px; font-weight: bold;}
+.menutxtspecial1{ background-color: rgb(100, 24, 51); line-height: 40px;}
+
+/*第四栏*/
+#content{ width: 960px; height: 675px; padding-top: 10px;}
+
+/*特效区*/
+#contentleft{ width: 650px; height: 675px; padding-right: 5px; float: left;}
+#contentleftpictxt{ width: 650px; height: 355px; }
+#contentleftpic{ width: 645px; height: 275px; }
+#contentleftpic1{ display: none; width: 645px; height: 275px; background-image: url("images/hourglass-2.jpg");}
+#contentleftpic2{ display: none; width: 645px; height: 275px; background-image: url("images/how_much_home.jpg");}
+#contentleftpic3{ display: none; width: 645px; height: 275px; background-image: url("images/health-benefits-banner.jpg");}
+#contentleftpic4{ display: none; width: 645px; height: 275px; background-image: url("images/aging-app-cover-website.jpg");}
+.contentleftpicright{ width: 380px; height: 275px; float: right;}
+#contentlefttxt{ width: 650px; height: 64px; }
+.contentlefttxtli1{width: 153px; height: 80px; margin: 0 3px 0px 5px; float: left; cursor: pointer;}
+.contentlefttxtlipic{ display: none; width: 153px; height: 80px; color: #fff; background-image: url("images/home-show-active-2.gif");background-position: 0px 100%;background-repeat: no-repeat; }
+.contentlefttxtli2{ display: block; width: 150px; height: 60px; margin-top: 17px;border: 3px solid rgb(213, 213, 210); text-align: center; font-size: 15px;
+ line-height: 30px;font-weight: 700;color: #A6A9AB; border-radius: 4px;}
+ .contentlefttxtli3{display: block; width: 150px; height: 40px; padding-top: 20px; text-align: center; font-size: 15px;
+ line-height: 25px;font-weight: 700;color: #fff; border-radius: 4px;}
+
+ /*第五栏*/
+ #lm5{width: 650px; height: 258px; padding-top: 20px;}
+.lm5left{ width: 200px; height: 100%; padding-right: 15px; float: left;}
+.lm5pic{ display: block; width: 199px; height: 129px;}
+.lm5span1{ display: block; width: 200px; height: 54px; font-size: 24px; line-height: 24px; color: rgb(189, 156, 37);text-align: left; padding-top: 20px;}
+.lm5span2{ display: block; width: 200px; height: auto; font-size: 13px; line-height: 19px; color: #000; text-align: left; font-family: Arial,Helvetica,Verdana,Tahoma,sans-serif;}
+
+/*特效区右侧*/
+#contentright{ width: 275px; height: 675px; float: right; }
+.contentrightlm1{ width: 245px; height: 14px; background-color: rgb(213, 213, 210); border-radius: 4px; color: rgb(100, 24, 51); font-weight: 700; line-height: 14px; text-align: center;padding: 7px 15px; font-size: 13px;font-family: Arial,Helvetica,Verdana,Tahoma,sans-serif; }
+#contentrightlm2{ display: block; width: 275px;height: 178px; padding-top: 10px;}
+
+.lm6span{ width: 275px; padding: 10px 0 10px 0; }
+.lm6link{ text-decoration: underline; color: rgb(100, 24, 51); }
+
+.contentrightlm3{ width: 275px; height: 300px;}
+.contentrightlm3li{ width: 130px; height: 120px; float: left; padding: 20px 3px 5px 3px; }
+.contentrightlm3pic{ display: block; width: 130px; height: 78px;}
+.contentrightlm3txt{ display: block; width: 130px; height: 20px; line-height: 20px; font-size: 14px; text-align: center; font-family: Arial,Helvetica,Verdana,Tahoma,sans-serif;color: rgb(189, 156, 37);}
+
+/*最后一栏*/
+#footer{ width: 960px; height: 236px; padding: 15px 0px 30px;background-color: rgb(213, 213, 210);border-radius: 8px; margin-bottom: 30px;}
+#footerleft{width: 639px; height: 236px; float: left;margin-left: 30px; background-image: url("images/border-dot-grey.gif");background-position: 100% 0px;background-repeat: repeat-y;font-size: 12px; font-family: Arial,Helvetica,Verdana,Tahoma,sans-serif; }
+#footerright{ width: 270px; height: 121px; float: right;}
+.footerleftli{float: left; margin-right: 20px; width: 168px;height: 209px;border-radius: 6px; padding: 5px 10px 10px;}
+.footerleftli1{background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204);}
+
+.footerspan1{ display: block; width: 168px; height: 34px; margin: 10px 0px 5px; color: rgb(100, 24, 51); font-weight: 700; line-height: 16px; font-size: 16px; text-align: left; font-family: Arial,Helvetica,Verdana,Tahoma,sans-serif;}
+.footerspan2{ width: 168px;height: 146px;margin: 1px 0px 14px;line-height: 19px;font-size: 13px; text-align: left; font-family: Arial,Helvetica,Verdana,Tahoma,sans-serif;}
+.footerspan3{line-height: 19px;font-size: 13px; text-align: left; font-family: Arial,Helvetica,Verdana,Tahoma,sans-serif;color: rgb(100, 24, 51);font-weight: 700; }
+.footerspan4{ width: 168px; height: 146px; margin: 1px 0px 14px; line-height: 19px;font-size: 13px; text-align: left; font-family: Arial,Helvetica,Verdana,Tahoma,sans-serif;}
+
+.footerleftspan1{ display: block; width: 190px;height: 12px;font-size: 12px; margin: 20px 0px 10px;color: rgb(0, 0, 0);font-weight: 700;line-height: 12px;text-align: left; font-family: Arial,Helvetica,Verdana,Tahoma,sans-serif;}
+.footerleftspan2{ display: block; width: 170px;height: 12px; color: rgb(0, 0, 0); line-height: 12px;padding-left: 20px;background-image: url("images/grey-arrow.gif"); background-position: 0px 1px;background-repeat: no-repeat;text-align: left; font-family: Arial,Helvetica,Verdana,Tahoma,sans-serif;}

@@ -1,0 +1,19 @@
+*{ margin:0 auto; padding: 0;}
+img{ border: 0;}
+div{ font-size: 12px;}
+ul,li{list-style: none;}
+a{ text-decoration: none; }
+
+#tiltle{width: 800px; height: 50px; border: 1px solid #ccc; margin-top: 50px;}
+#titleleft{ height: 50px; line-height: 50px; font-size: 14px; color: #000; padding-left: 40px;}
+#indexlink{ width: 800px; height: 300px; padding-top: 20px;}
+#indexlink a{color: blue;}
+#indexlink a:hover{text-decoration: underline; color: red;}
+#indexlink li{ width: 800px; height: 26px; line-height: 26px; padding-left: 10px; font-size: 14px;}
+
+#timearea{width: 380px; height: 30px; padding: 10px; border: 1px solid #ccc;}
+#datetime{width: 200px; height: 30px; float: left; }
+#secondtime{width: 160px; height: 30px; float: right; }
+.timestyle{width: 20px; height: 30px; float: left; background-image: url("images/dig.png"); }
+.heng{background-position: 0 -330px;}
+.mao{background-position: 0 -301px;}

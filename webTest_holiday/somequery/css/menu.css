@@ -1,0 +1,16 @@
+*{ margin: 0 auto; padding: 0;}
+ul,li{list-style: none;}
+a{ text-decoration: none;}
+body{ background-color: #dddddd;}
+
+#menu{ width: 100%; height: 45px; background-color: #ccc;}
+
+#menuall{ width: 1000px; height: 32px;  padding-top: 10px;}
+
+.menuA{ display: inline-block; height: auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;  position: relative;}
+
+.menutitle{ display: inline-block; height: 16px; line-height: 16px; padding: 8px; color: #666; font-size: 14px; text-align: center;}
+
+.menulist{display: none; width: 150px; position: absolute; height: auto;  background-color: #fff; box-shadow: 3px 3px 10px rgba(0,0,0,0.3); }
+
+.menulistli{ height: 26px; line-height: 26px; padding-left: 8px; padding-right: 8px; color: #666; font-size: 13px;  }
