@@ -74,21 +74,25 @@ a:hover{ text-decoration: underline;}
 
 #top2rightcontent2{width: 755px; height: 530px; padding-top: 40px; }
  
-.top2rightcontent1list{ float: left; width: 300px; height: 530px; background-color: #F9F9F9;}
-.top2rightcontent1listli{ float: left; width: 300px; height: 50px;}
+.top2rightcontent1list{ float: left; width: 300px; height: 530px; }
+.top2rightcontent1listli{ float: left; width: 300px; height: 45px;}
 .lispecial{ height: 65px; position: relative;}
 .top2rightcontent1span{ float: left; display: block; width:72px; height: 26px; line-height: 26px; font-size: 14px; color: #000000; }
-.top2rightcontent1input{ float: left; display: block; width: 224px; height: 30px; line-height: 30px; font-size: 14px; text-align: left;}
+.top2rightcontent1input{ float: left; display: block; width: 220px; height: 30px; padding-left: 4px; padding-right: 4px; line-height: 30px; font-size: 14px; text-align: left;}
 .specialposition{display: inline-block;  height: 24px; line-height: 24px; font-size: 12px; float: left; color: #999999; padding-left: 72px;}
 .specialpositiona{display: inline-block; float: left; height: 24px; line-height: 24px; font-size: 12px; float: left; color: #336699;}
 
-.radiosex{ width: 70px; height: 36px; display: inline-block;}
+.radiosex{ width: 68px; height: 36px; display: inline-block;}
 
-.locationdown{position: absolute; top: 30px; left: 72px; width: 442px; height: 100px; padding: 15px 5px; background-color: #EFEFEF; border: 1px solid #B1BACC;}
-.locationdown li{ display: block; width: 442px; height: 20px; background-color: #FFFFFF;}
-.locationname{ display: inline-block; width: 26px; height: 15px; font-size: 13px; color: #5292C2; line-height: 15px; padding: 1px;}
+.locationdown{display: none; position: absolute; top: 30px; left: 72px; width: 442px; height: 100px; padding: 15px 5px; background-color: #EFEFEF; border: 1px solid #B1BACC;}
+.locationdownlist{ width: 442px; height: auto;background-color: #FFFFFF; border: 1px solid #B1BACC;}
+.locationdown li{ display: block; width: 442px; height: 20px; }
+.locationname{ display: inline-block; width: 26px; height: 15px; font-size: 13px; color: #5292C2; line-height: 15px; padding: 1px; cursor: pointer;}
+.locationname:hover{ text-decoration: underline;}
+.closebtn{ cursor: pointer; width: 62px; height: 23px; margin-right: 20px; margin-top: 20px; background-image: linear-gradient(#ffffff,#D8D8D8); background-color: #fff; border: 1px solid #B1BACC; border-radius: 5px; text-align: center; line-height: 23px; font-size: 14px; color: #000;}
 
-.top2rightcontent2right{ float: left; width: 400px; height: 430px; border: 1px solid #E1E1E1; margin-left: 15px; }
+
+.top2rightcontent2right{ float: left; width: 400px; height: 400px; border: 1px solid #E1E1E1; margin-left: 15px; }
 
 .top2rightrightlist{ width: 360px; height: 70px; margin-top: 15px;}
 .top2rightmathli{ float: left; width: 120px; height: 60px; }
