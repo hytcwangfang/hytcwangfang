@@ -58,8 +58,6 @@ $(function(){
 
 	$(".middetailli2list").click(function(){
 		var spanname=$(this).find(".span7").html();
-		var imgshowsrc="css/images/open_arrow_fire.png";
-		var imghidesrc="css/images/open_arrow.png";
 		if (spanname=="我的好友") {
 			var openstate=$("#haoyoulist").attr("openstate");
 			if (openstate=="false") {
@@ -110,5 +108,109 @@ $(function(){
 		};
 	});
 	
+	$(".setupup2").click(function(){
+		var idname=$(this).attr("id");
+		if(idname=="aboutqq"){
+			var openstate=$(this).attr("openstate");
+			if(openstate=="false"){
+				$(".setup2downlist").show();
+				$(this).attr("openstate","true");
+				$(this).find(".setupup2littleimg img").attr("src",imgshowsrc);
+			}else{
+				$(".setup2downlist").hide();
+				$(this).attr("openstate","false");
+				$(this).find(".setupup2littleimg img").attr("src",imghidesrc);
+			};
+		};
+	});
+
+	$("#setupdown").click(function(){
+		var openstate=$(this).attr("openstate");
+		if(openstate=="false"){
+			$(".setuplittlepicli2down").show();
+			$(this).attr("openstate","true");
+		}else{
+			$(".setuplittlepicli2down").hide();
+			$(this).attr("openstate","false");
+		}
+		
+	});
+
+
+	$(".setuppiclistli").hover(function(){
+		$(this).css("background-color","#7FD4FF");
+	},function(){
+		$(this).css("background-color","");
+	});
+
+	$(".setuppiclistli").click(function(){
+		var idindex=$(this).attr("idindex");
+		idindex=idindex*18;
+		$(".setuplittlepicli1").css("background-position","-"+idindex+"px 0px");
+		$(".setuplittlepicli2down").hide();
+		$(".setuplittlepicli2down").attr("openstate","false");
+	});
+
+	$(".middetailli").click(function(){
+		var divtop=Math.random()*25+75;
+		var divleft=Math.random()*200+10;
+		$(".rightall").css({"top":divtop,"left":divleft});
+		var username=$(this).find(".midusername").html();
+		var html=$("#allright").html();
+		html += '<div class="rightall">';
+		html += '		<div class="righttittle">';
+		html += '			<div class="rightdownbtn">';
+		html += '				<div class="rightdownbtnpic">';
+		html += '					<img src="css/images/pannel-arrow-down.png">';
+		html += '				</div>';
+		html += '			</div>';
+		html += '			<span class="span07">' + username + '</span>';
+		html += '			<div class="rightclosebtn">';
+		html += '				<span class="span06">关闭</span>';
+		html += '			</div>';
+		html += '		</div>';
+		html += '		<div class="rightcontent"></div>';
+		html += '		<div class="rightfoot">';
+		html += '			<div class="rightfootsmile">';
+		html += '				<img src="css/images/chat_bottombar_icon_face.png">';
+		html += '			</div>';
+		html += '			<div class="inputarea">';
+		html += '				<input class="rightfootinput">';
+		html += '			</div>';
+		html += '			<div class="rightfootsend"><span>发送</span></div>';
+		html += '		</div>';
+		html += '	</div>';
+		html += '</div>';
+		$("#allright").html(html);
+
+		//备份
+		/*html += '<div class="rightall">';
+		html += '		<div class="righttittle">';
+		html += '			<div class="rightdownbtn">';
+		html += '				<div class="rightdownbtnpic">';
+		html += '					<img src="css/images/pannel-arrow-down.png">';
+		html += '				</div>';
+		html += '			</div>';
+		html += '			<span class="span07">' + username + '</span>';
+		html += '			<div class="rightclosebtn">';
+		html += '				<span class="span06">关闭</span>';
+		html += '			</div>';
+		html += '		</div>';
+		html += '		<div class="rightcontent"></div>';
+		html += '		<div class="rightfoot">';
+		html += '			<div class="rightfootsmile">';
+		html += '				<img src="css/images/chat_bottombar_icon_face.png">';
+		html += '			</div>';
+		html += '			<div class="inputarea">';
+		html += '				<input class="rightfootinput">';
+		html += '			</div>';
+		html += '			<div class="rightfootsend"><span>发送</span></div>';
+		html += '		</div>';
+		html += '	</div>';
+		html += '</div>';*/
+	});
 
 });
+
+var imgshowsrc="css/images/open_arrow_fire.png";
+var imghidesrc="css/images/open_arrow.png";
