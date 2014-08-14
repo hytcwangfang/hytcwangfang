@@ -2,6 +2,8 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/miniqq.css">
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/miniqq.js"></script>
 	<title></title>
 </head>
 <body>
@@ -30,7 +32,7 @@
 				</li>
 			</ul>
 			<div class="midcontent">
-				<div id="huihuacontent">
+				<div id="huihuacontent" class="midcontentup">
 					<div class="midup">
 						<span class="span3">会话</span>
 					</div>
@@ -107,6 +109,16 @@
 						</li>
 						<li class="middetailli">
 							<div class="midheadimg">
+								<a href=""><img src="css/images/discu_avatar.png"></a>
+							</div>
+							<div class="midliright">
+								<span class="midindeedname">大海波涛、权、竹路轻尘、憾菿颩咯</span>
+								<span class="midusername"></span>
+								<span class="midshuoshuo"></span>
+							</div>
+						</li>
+						<li class="middetailli">
+							<div class="midheadimg">
 								<a href=""><img src="css/images/getface_006.jpg"></a>
 							</div>
 							<div class="midliright">
@@ -117,7 +129,7 @@
 						</li>
 					</ul>
 				</div>
-				<div id="lianxirencontent">
+				<div id="lianxirencontent" class="midcontentup">
 					<div class="midup">
 						<span class="span3">联系人</span>
 						<div class="midupsearch">
@@ -128,17 +140,17 @@
 					</div>
 					<div class="middetail">
 						<ul class="middetailli2list0">
-							<li class="middetailli2li">
+							<li id="haoyouspan61" class="middetailli2li middetailli2lispecial">
 								<span class="span6 span6special">好友</span>
 							</li>
-							<li class="middetailli2li">
+							<li id="qunspan62" class="middetailli2li">
 								<span class="span6">群</span>
 							</li>
-							<li class="middetailli2li">
+							<li id="taolunzuspan63" class="middetailli2li">
 								<span class="span6">讨论组</span>
 							</li>
 						</ul>
-						<div class="middetailspecial2">
+						<div id="haoyoucontent" class="middetailspecial2">
 							<ul class="middetailli2list">
 								<li class="middetailli2">
 									<div class="middetailli2pic1">
@@ -146,6 +158,48 @@
 									</div>
 									<span class="span7">我的好友</span>
 									<div class="middetailli2right">3/7</div>
+								</li>
+							</ul>
+							<ul id="haoyoulist" class="myfriendslist" openstate="false">
+								<li class="middetailli">
+									<div class="midheadimg">
+										<a href=""><img src="css/images/getface_010.jpg"></a>
+									</div>
+									<div class="midliright">
+										<span class="midindeedname">王潮</span>
+										<span class="midusername">(光辉岁月)</span>
+										<span class="midshuoshuo">天气 not so good</span>
+									</div>
+								</li>
+								<li class="middetailli">
+									<div class="midheadimg">
+										<a href=""><img src="css/images/getface_007.jpg"></a>
+									</div>
+									<div class="midliright">
+										<span class="midindeedname">张淑君</span>
+										<span class="midusername">(光辉岁月)</span>
+										<span class="midshuoshuo"></span>
+									</div>
+								</li>
+								<li class="middetailli">
+									<div class="midheadimg">
+										<a href=""><img src="css/images/getface_005.jpg"></a>
+									</div>
+									<div class="midliright">
+										<span class="midindeedname">王琴</span>
+										<span class="midusername">(光辉岁月)</span>
+										<span class="midshuoshuo"></span>
+									</div>
+								</li>
+								<li class="middetailli">
+									<div class="midheadimg">
+										<a href=""><img src="css/images/getface_006.jpg"></a>
+									</div>
+									<div class="midliright">
+										<span class="midindeedname">冯莹</span>
+										<span class="midusername">(光辉岁月)</span>
+										<span class="midshuoshuo"></span>
+									</div>
 								</li>
 							</ul>
 							<ul class="middetailli2list">
@@ -157,6 +211,18 @@
 									<div class="middetailli2right">0/1</div>
 								</li>
 							</ul>
+							<ul id="pengyoulist" class="myfriendslist" openstate="false">
+								<li class="middetailli">
+									<div class="midheadimg">
+										<a href=""><img src="css/images/getface_002.jpg"></a>
+									</div>
+									<div class="midliright">
+										<span class="midindeedname">王博</span>
+										<span class="midusername">(学海翱翔)</span>
+										<span class="midshuoshuo"></span>
+									</div>
+								</li>
+							</ul>
 							<ul class="middetailli2list">
 								<li class="middetailli2">
 									<div class="middetailli2pic1">
@@ -164,6 +230,28 @@
 									</div>
 									<span class="span7">家人</span>
 									<div class="middetailli2right">1/2</div>
+								</li>
+							</ul>
+							<ul id="jiarenlist" class="myfriendslist" openstate="false">
+								<li class="middetailli">
+									<div class="midheadimg">
+										<a href=""><img src="css/images/getface_010.jpg"></a>
+									</div>
+									<div class="midliright">
+										<span class="midindeedname">王潮</span>
+										<span class="midusername">(光辉岁月)</span>
+										<span class="midshuoshuo">天气 not so good</span>
+									</div>
+								</li>
+								<li class="middetailli">
+									<div class="midheadimg">
+										<a href=""><img src="css/images/getface_007.jpg"></a>
+									</div>
+									<div class="midliright">
+										<span class="midindeedname">张淑君</span>
+										<span class="midusername">(光辉岁月)</span>
+										<span class="midshuoshuo"></span>
+									</div>
 								</li>
 							</ul>
 							<ul class="middetailli2list">
@@ -175,48 +263,95 @@
 									<div class="middetailli2right">4/12</div>
 								</li>
 							</ul>
+							<ul id="tongxuelist" class="myfriendslist" openstate="false">
+								<li class="middetailli">
+									<div class="midheadimg">
+										<a href=""><img src="css/images/getface_010.jpg"></a>
+									</div>
+									<div class="midliright">
+										<span class="midindeedname">王潮</span>
+										<span class="midusername">(光辉岁月)</span>
+										<span class="midshuoshuo">天气 not so good</span>
+									</div>
+								</li>
+								<li class="middetailli">
+									<div class="midheadimg">
+										<a href=""><img src="css/images/getface_007.jpg"></a>
+									</div>
+									<div class="midliright">
+										<span class="midindeedname">张淑君</span>
+										<span class="midusername">(光辉岁月)</span>
+										<span class="midshuoshuo"></span>
+									</div>
+								</li>
+							</ul>
 						</div>
-						<!-- <ul class="middetailspecial2">
-							<li class="middetailli2">
-								<div class="middetailli2pic1">
-									<img src="css/images/open_arrow.png">
-								</div>
-								<span class="span7">我的好友</span>
-								<div class="middetailli2right">3/7</div>
-							</li>
-							<li class="middetailli2">
-								<div class="middetailli2pic1">
-									<img src="css/images/open_arrow.png">
-								</div>
-								<span class="span7">朋友</span>
-								<div class="middetailli2right">0/1</div>
-							</li>
-							<li class="middetailli2">
-								<div class="middetailli2pic1">
-									<img src="css/images/open_arrow.png">
-								</div>
-								<span class="span7">家人</span>
-								<div class="middetailli2right">1/2</div>
-							</li>
-							<li class="middetailli2">
-								<div class="middetailli2pic1">
-									<img src="css/images/open_arrow.png">
-								</div>
-								<span class="span7">同学</span>
-								<div class="middetailli2right">4/12</div>
-							</li>
-						</ul> -->
+						<div id="quncontent" class="middetailspecial2">
+							<ul class="myfriendslist">
+								<li class="middetailli">
+									<div class="midheadimg">
+										<a href=""><img src="css/images/getface_004.jpg"></a>
+									</div>
+									<div class="midliright">
+										<span class="midindeedname">1103~淮师计科</span>
+										<span class="midusername"></span>
+										<span class="midshuoshuo"></span>
+									</div>
+								</li>
+								<li class="middetailli">
+									<div class="midheadimg">
+										<a href=""><img src="css/images/getface.jpg"></a>
+									</div>
+									<div class="midliright">
+										<span class="midindeedname">淮师计科1103班</span>
+										<span class="midusername"></span>
+										<span class="midshuoshuo"></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div id="taolunzucontent" class="middetailspecial2">
+							<ul class="myfriendslist">
+								<li class="middetailli">
+									<div class="midheadimg">
+										<a href=""><img src="css/images/discu_avatar.png"></a>
+									</div>
+									<div class="midliright">
+										<span class="midindeedname">大海波涛、权、竹路轻尘、憾菿颩咯</span>
+										<span class="midusername"></span>
+										<span class="midshuoshuo"></span>
+									</div>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div id="faxiancontent">
+				<div id="faxiancontent" class="midcontentup">
 					<div class="midup">
 						<span class="span3">发现</span>
 					</div>
 					<ul class="middetail">
-						
+						<li class="faxianlistli faxianlistlispecial1">
+							<div class="faxianlistlipic">
+								<img src="css/images/plugin_icon_qzone.jpg">
+							</div>
+							<span class="span8">QQ空间</span>
+						</li>
+						<li class="faxianlistli">
+							<div class="faxianlistlipic">
+								<img src="css/images/plugin_icon_qmail.jpg">
+							</div>
+							<span class="span8">QQ邮箱</span>
+						</li>
+						<li class="faxianlistli faxianlistlispecial2">
+							<div class="faxianlistlipic">
+								<img src="css/images/plugin_icon_qq_portal.png">
+							</div>
+							<span class="span8">腾讯网</span>
+						</li>
 					</ul>
 				</div>
-				<div id="shezhicontent">
+				<div id="shezhicontent" class="midcontentup">
 					<div class="midup">
 						<span class="span3">设置</span>
 					</div>
@@ -225,25 +360,25 @@
 					</ul>
 				</div>
 				<ul class="middown">
-					<li class="middownli middownlispecial1">
+					<li id="huihuaspan4" class="middownli middownlispecial1">
 						<div class="middownlipic">
 							<img src="css/images/tab_icon_conversation_selected.png">
 						</div>
 						<span class="span4">会话</span>
 					</li>
-					<li class="middownli">
+					<li id="lianxirenspan4" class="middownli">
 						<div class="middownlipic">
 							<img src="css/images/tab_icon_contact.png">
 						</div>
 						<span class="span4">联系人</span>
 					</li>
-					<li class="middownli">
+					<li id="faxianspan4" class="middownli">
 						<div class="middownlipic">
 							<img src="css/images/tab_icon_plugin.png">
 						</div>
 						<span class="span4">发现</span>
 					</li>
-					<li class="middownli middownlispecial2">
+					<li id="shezhispan4" class="middownli middownlispecial2">
 						<div class="middownlipic">
 							<img src="css/images/tab_icon_setup.png">
 						</div>
