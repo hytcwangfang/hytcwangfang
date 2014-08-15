@@ -152,9 +152,57 @@ body{ background-image: url("images/1.jpg");}
 .rightfootinput{ display: block; width: 524px; height: 32px; border: 0; font-size: 16px; color: #543333; font-family: '微软雅黑','Helvetica Neue',Helvetica,Arial; }
 .rightfootsend{ float: left; width: 60px; height: 40px; line-height: 40px; margin-left: 20px; margin-top: 5px; text-align: center; font-size: 16px; color: #fff;font-family: '微软雅黑','Helvetica Neue',Helvetica,Arial; background: linear-gradient(#5F9CC5, #396B9E) repeat scroll 0% 0% transparent; border-radius: 3px;}
 
-.feelingimglist{ width: 700px; height: 280px; background: linear-gradient(#D2D7DB, #C7CBCC) repeat scroll 0% 0% transparent; }
-.feelingimgsli{ width: 700px; height: 90px; }
-.feelingimg{ float: left; width: 98px; height: 90px; border: 1px solid rgba(202, 206, 207, 0); background-image: url("images/qqimage_01.jpg");}
-.feelingimg:hover{ border: 1px solid #339ACD;}
+.feelingarea{ display: none; width: 700px; height: 302px;}
 
+.feelingimglist{ width: 700px; height: 276px; background: linear-gradient(#D2D7DB, #C7CBCC) repeat scroll 0% 0% transparent; }
+.feelingimgsli{ width: 700px; height: 90px; }
+.feelingimg1{ cursor: pointer; float: left; width: 98px; height: 90px; border: 1px solid rgba(202, 206, 207, 0); background-image: url("images/qqimage_01.jpg");}
+.feelingimg2{ cursor: pointer; float: left; width: 98px; height: 90px; border: 1px solid rgba(202, 206, 207, 0); background-image: url("images/qqimage_02.jpg");}
+.feelingimg3{ cursor: pointer; float: left; width: 98px; height: 90px; border: 1px solid rgba(202, 206, 207, 0); background-image: url("images/qqimage_03.jpg");}
+.feelingimg4{ cursor: pointer; float: left; width: 98px; height: 90px; border: 1px solid rgba(202, 206, 207, 0); background-image: url("images/qqimage_04.jpg");}
+.feelingimg5{ cursor: pointer; float: left; width: 98px; height: 90px; border: 1px solid rgba(202, 206, 207, 0); background-image: url("images/qqimage_05.jpg");}
+.feelingimg6{ cursor: pointer; float: left; width: 98px; height: 90px; border: 1px solid rgba(202, 206, 207, 0); background-image: url("images/qqimage_06.jpg");}
+.feelingimg1:hover{ border: 1px solid #339ACD;}
+.feelingimg2:hover{ border: 1px solid #339ACD;}
+.feelingimg3:hover{ border: 1px solid #339ACD;}
+.feelingimg4:hover{ border: 1px solid #339ACD;}
+.feelingimg5:hover{ border: 1px solid #339ACD;}
+.feelingimg6:hover{ border: 1px solid #339ACD;}
+
+.position20{ background-position: 0 0;}
+.position21{ background-position: -103px 0;}
+.position22{ background-position: -206px 0;}
+.position23{ background-position: -309px 0;}
+.position24{ background-position: -412px 0;}
+.position25{ background-position: -515px 0;}
+.position26{ background-position: -618px 0;}
+
+.position27{ background-position: 0 -96px;}
+.position28{ background-position: -103px -96px;}
+.position29{ background-position: -206px -96px;}
+.position30{ background-position: -309px -96px;}
+.position31{ background-position: -412px -96px;}
+.position32{ background-position: -515px -96px;}
+.position33{ background-position: -618px -96px;}
+
+.position34{ background-position: 0 -190px;}
+.position35{ background-position: -103px -190px;}
+.position36{ background-position: -206px -190px;}
+.position37{ background-position: -309px -190px;}
+.position38{ background-position: -412px -190px;}
+.position39{ background-position: -515px -190px;}
+.position40{ background-position: -618px -190px;}
+
+#mood1{display: block;}
+#mood2{display: none;}
+#mood3{display: none;}
+#mood4{display: none;}
+#mood5{display: none;}
+#mood6{display: none;}
+
+.feelingnextchoose{ width: 700px; height: 26px; border-radius: 0px 0px 6px 6px; background: none repeat scroll 0% 0% rgba(34, 34, 34, 0.7);}
+.littlecircleimglist{ width: 150px; height: 14px; padding-top: 6px;}
+.littlecircleimgli{ float: left; width: 15px; padding-left: 5px; padding-right: 5px; cursor: pointer;}
+.circle{background: none repeat scroll 0% 0% #808080; width: 15px;height: 15px;border-radius: 15px;}
+.circlespecial{ background: none repeat scroll 0% 0% #000;}
 
