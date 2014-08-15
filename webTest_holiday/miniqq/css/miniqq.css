@@ -47,7 +47,7 @@ body{ background-image: url("images/1.jpg");}
 .midcontent{ width: 280px; height: 495px;}
 .midup{ position: relative; width: 100%; height: 45px; background: linear-gradient(#555, #222) repeat scroll 0% 0% transparent; border-radius: 6px 6px 0 0; }
 .middetail{ width: 100%; height: 400px; overflow: auto; background: #808080;}
-.middetailspecial2{width: 100%; height: 320px; overflow: auto; }
+.middetailspecial2{width: 100%; height: 360px; overflow: auto; }
 .middetailspecial3{ background-color: #fff;}
 .myfriendslist{ display: block; width: 100%; height: auto;}
 .middown{ width: 100%; height: 50px; background: linear-gradient(#555, #222) repeat scroll 0% 0% transparent; border-radius: 0 0 6px 6px;  box-shadow: 0px 0px 10px #111 inset; }
@@ -129,9 +129,9 @@ body{ background-image: url("images/1.jpg");}
 .position15{ background-position: -90px 0;}
 .position16{ background-position: -108px 0;}
 
-#allright{ float: left; width: 700px; height: 600px; position: relative;}
+#allright{ float: left; width: 700px; height: 600px; position: relative; z-index: 10px;}
 
-.rightall{ position: absolute; width: 700px; height: 495px; top: 60px; left: 10px;}
+.rightall{ position: absolute; width: 700px; height: 495px; top: 60px; left: 10px; z-index: 15px;}
 
 
 .righttittle{ position: relative; width: 100%; height: 45px; background: linear-gradient(#555, #222) repeat scroll 0% 0% transparent; border-radius: 6px 6px 0 0; }
@@ -141,17 +141,20 @@ body{ background-image: url("images/1.jpg");}
 .rightclosebtn{ position: absolute; top: 7px; right: 10px; cursor: pointer; border-radius: 6px; border: 1px solid #2C2727; width: 90px; height: 30px; border-color: #2C2727 #2C2727 #1A1919;background: linear-gradient(#555, #222) repeat scroll 0% 0% transparent;}
 .span06{display: block; width: 100%; height: 100%; line-height: 30px; text-align: center; color: #fff; font-size: 14px; font-weight: 400; font-family: '微软雅黑','Helvetica Neue',Helvetica,Arial;}
 .span07{ display: block; width: 100%; height: 45px; line-height: 45px; text-align: center; color: #fff; font-size: 18px; font-family: '微软雅黑','Helvetica Neue',Helvetica,Arial;}
-.rightcontent{ width: 100%; height: 400px; background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.5) !important;}
+
+.rightcontent{ width: 100%; height: 400px; background-color: #E9E9E9;}
 
 
 .rightfoot{ width: 100%; height: 50px; background: linear-gradient(#555, #222) repeat scroll 0% 0% transparent; border-radius: 0 0 6px 6px;  box-shadow: 0px 0px 10px #111 inset;}
-.rightfootsmile{ float: left; width: 30px; height: 30px; padding-top: 10px; margin-left: 15px; }
+.rightfootsmile{ cursor: pointer; float: left; width: 30px; height: 30px; padding-top: 10px; margin-left: 15px; }
 .rightfootsmile img{ width: 30px; height: 30px;}
 .inputarea{ float: left; width: 544px; height: 32px; margin-top: 9px; margin-left: 15px; border-radius: 6px; background-color: #fff;}
 .rightfootinput{ display: block; width: 524px; height: 32px; border: 0; font-size: 16px; color: #543333; font-family: '微软雅黑','Helvetica Neue',Helvetica,Arial; }
 .rightfootsend{ float: left; width: 60px; height: 40px; line-height: 40px; margin-left: 20px; margin-top: 5px; text-align: center; font-size: 16px; color: #fff;font-family: '微软雅黑','Helvetica Neue',Helvetica,Arial; background: linear-gradient(#5F9CC5, #396B9E) repeat scroll 0% 0% transparent; border-radius: 3px;}
 
-
-
+.feelingimglist{ width: 700px; height: 280px; background: linear-gradient(#D2D7DB, #C7CBCC) repeat scroll 0% 0% transparent; }
+.feelingimgsli{ width: 700px; height: 90px; }
+.feelingimg{ float: left; width: 98px; height: 90px; border: 1px solid rgba(202, 206, 207, 0); background-image: url("images/qqimage_01.jpg");}
+.feelingimg:hover{ border: 1px solid #339ACD;}
 
 
