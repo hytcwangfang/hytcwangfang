@@ -144,84 +144,71 @@ $(function(){
 	});
 
 	$(".setuppiclistli").click(function(){
-		var idindex = $(this).attr("idindex");
-		idindex = idindex * 18;
-		$(".setuplittlepicli1").css("background-position","-" + idindex + "px 0px");
+		var idindex=$(this).attr("idindex");
+		idindex=idindex*18;
+		$(".setuplittlepicli1").css("background-position","-"+idindex+"px 0px");
 		$(".setuplittlepicli2down").hide();
 		$(".setuplittlepicli2down").attr("openstate","false");
 	});
 
 	$(".middetailli").click(function(){
-		var divtop = Math.random() * 25 + 75;
-		var divleft = Math.random() * 200 + 10;
-		var friendid = $(this).attr("friendid");
-		var chatareaid = "chatarea" + friendid;
-		var indeedname = $(this).find(".midindeedname").html();
-		var openstate = $(this).attr("openstate");
-		$(".rightall").css("z-index","15");
-		if(openstate=="false"){
-			var html=$("#allright").html();
-			html += '<div class="rightall" id=' + chatareaid + '>';
-			html += '		<div class="righttittle">';
-			html += '			<div class="rightdownbtn">';
-			html += '				<div class="rightdownbtnpic">';
-			html += '					<img src="css/images/pannel-arrow-down.png">';
-			html += '				</div>';
-			html += '			</div>';
-			html += '			<span class="span07">' + indeedname + '</span>';
-			html += '			<div class="rightclosebtn" friendid = "friend' + friendid + '" chatareaid = ' + chatareaid + '>';
-			html += '				<span class="span06">关闭</span>';
-			html += '			</div>';
-			html += '		</div>';
-			html += '		<div class="rightcontent"></div>';
-			html += '		<div class="rightfoot">';
-			html += '			<div class="rightfootsmile">';
-			html += '				<img src="css/images/chat_bottombar_icon_face.png">';
-			html += '			</div>';
-			html += '			<div class="inputarea">';
-			html += '				<input class="rightfootinput">';
-			html += '			</div>';
-			html += '			<div class="rightfootsend"><span>发送</span></div>';
-			html += '		</div>';
-			html += '	</div>';
-			html += '</div>';
-			$("#allright").html(html);
+		var divtop=Math.random()*25+75;
+		var divleft=Math.random()*200+10;
+		$(".rightall").css({"top":divtop,"left":divleft});
+		var username=$(this).find(".midusername").html();
+		var html=$("#allright").html();
+		html += '<div class="rightall">';
+		html += '		<div class="righttittle">';
+		html += '			<div class="rightdownbtn">';
+		html += '				<div class="rightdownbtnpic">';
+		html += '					<img src="css/images/pannel-arrow-down.png">';
+		html += '				</div>';
+		html += '			</div>';
+		html += '			<span class="span07">' + username + '</span>';
+		html += '			<div class="rightclosebtn">';
+		html += '				<span class="span06">关闭</span>';
+		html += '			</div>';
+		html += '		</div>';
+		html += '		<div class="rightcontent"></div>';
+		html += '		<div class="rightfoot">';
+		html += '			<div class="rightfootsmile">';
+		html += '				<img src="css/images/chat_bottombar_icon_face.png">';
+		html += '			</div>';
+		html += '			<div class="inputarea">';
+		html += '				<input class="rightfootinput">';
+		html += '			</div>';
+		html += '			<div class="rightfootsend"><span>发送</span></div>';
+		html += '		</div>';
+		html += '	</div>';
+		html += '</div>';
+		$("#allright").html(html);
 
-			$("#" + chatareaid).css({
-				"top" : divtop + "px",
-				"left" : divleft + "px",
-				"z-index" : "20"
-			});
-			$(this).attr("openstate","true");
-		}else{
-			//将已有的置顶
-			$(".rightall").css("z-index","15");
-			$("#" + chatareaid).css("z-index","20");
-		};	
-
-		//关闭按钮
-		$(".rightclosebtn").click(function(){
-			var friendid = $(this).attr("friendid");
-			var chatareaid = $(this).attr("chatareaid");
-			/*alert(indeedname);*/
-			$("#" + chatareaid).remove();
-			$("#" + friendid).attr("openstate","false");
-		});
-
-		//将选中的置顶
-		$(".rightall").click(function(){
-			$(".rightall").css("z-index","15");
-			$(this).css("z-index","20");
-		});
-
-		$(".rightfootsmile").click(function(){
-			var chatareaid = $(this).attr("chatareaid");
-		});
+		//备份
+		/*html += '<div class="rightall">';
+		html += '		<div class="righttittle">';
+		html += '			<div class="rightdownbtn">';
+		html += '				<div class="rightdownbtnpic">';
+		html += '					<img src="css/images/pannel-arrow-down.png">';
+		html += '				</div>';
+		html += '			</div>';
+		html += '			<span class="span07">' + username + '</span>';
+		html += '			<div class="rightclosebtn">';
+		html += '				<span class="span06">关闭</span>';
+		html += '			</div>';
+		html += '		</div>';
+		html += '		<div class="rightcontent"></div>';
+		html += '		<div class="rightfoot">';
+		html += '			<div class="rightfootsmile">';
+		html += '				<img src="css/images/chat_bottombar_icon_face.png">';
+		html += '			</div>';
+		html += '			<div class="inputarea">';
+		html += '				<input class="rightfootinput">';
+		html += '			</div>';
+		html += '			<div class="rightfootsend"><span>发送</span></div>';
+		html += '		</div>';
+		html += '	</div>';
+		html += '</div>';*/
 	});
-	
-	
-	
-
 
 });
 
