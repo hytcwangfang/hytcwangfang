@@ -1,5 +1,15 @@
 $(function(){
 
+	//更换背景
+	$("#fore").click(function(){
+		index--;
+		showbackground();
+	});
+	$("#next").click(function(){
+		index++;
+		showbackground();
+	});
+
 	//会话，联系人，发现，设置选项
 	$(".middownli").click(function(){
 		$(".middownli").css({"background-color":"","box-shadow":""});
@@ -157,25 +167,201 @@ $(function(){
 
 	//显示对话框
 	$(".middetailli").click(function(){
+
+		var id = $(this).attr("id");
+		showdialog(id);
+
+
+		//箭头下拉框
+		$(".rightdownbtn").click(function(){
+			var chatareaid = $(this).attr("chatareaid");
+			var openstate = $(this).attr("openstate");
+			if(openstate=="false"){
+				$("#" + chatareaid).find(".directiondown").show();
+				$(this).attr("openstate","true");
+			}
+			else{
+				$("#" + chatareaid).find(".directiondown").hide();
+				$(this).attr("openstate","false");
+			}
+		});
+	
+		//关闭按钮
+		$(".rightclosebtn").click(function(){
+			var friendid = $(this).attr("friendid");
+			var chatareaid = $(this).attr("chatareaid");
+			/*alert(indeedname);*/
+			$("#" + chatareaid).remove();
+			$("#" + friendid).attr("openstate","false");
+		});
+
+		//将选中的置顶
+		$(".rightall").click(function(){
+			$(".rightall").css("z-index","15");
+			$(this).css("z-index","20");
+		});
+		
+		//大笑脸表情按钮
+		$(".rightfootsmile").click(function(){
+			var openstate = $(this).attr("openstate");
+			var chatareaid = $(this).attr("chatareaid");
+			if(openstate == "false"){
+				$("#" + chatareaid).find(".rightcontent").css("height","98px");
+				$("#" + chatareaid).find(".feelingarea").show();
+				$(this).attr("openstate","true");
+			}else{
+				$("#" + chatareaid).find(".rightcontent").css("height","400px");
+				$("#" + chatareaid).find(".feelingarea").hide();
+				$(this).attr("openstate","false");
+			};
+		});
+
+
+		//发送按钮
+		$(".rightfootsend").click(function(){
+			var chatareaid = $(this).attr("chatareaid");
+			var html = $("#" + chatareaid).find(".rightcontent").html();
+			var val = $("#" + chatareaid).find(".rightfootinput").val();
+			if(val != ""){
+				html += '<div class="textarea">';
+				html += '	<div class="textmasterright">';
+				html += '		<img src="css/images/getface_009.jpg">';
+				html += '	</div>';
+				html += '	<div class="textcontentleft">';
+				html += '		<div class="textmastername">';
+				html += '			<span class="span08">温迪</span>';
+				html += '		</div>';
+				html += '		<div class="textdetail">';
+				html += '			<span class="span09">' + val + '</span>';
+				html += '		</div>';
+				html += '	</div>';
+				html += '</div>';
+				$("#" + chatareaid).find(".rightcontent").html(html);
+				$("#" + chatareaid).find(".rightfootinput").val("");
+			}
+		});
+	
+		//圆点选择表情图
+		$(".littlecircleimgli").click(function(){
+			var chatareaid = $(this).parent().parent().attr("id");
+			var moodid=$(this).attr("moodid");
+			$(this).parent().find(".circle").css("background","none repeat scroll 0% 0% #808080");
+			$(this).find(".circle").css("background","none repeat scroll 0% 0% #000");
+			$("#" + chatareaid).find(".feelingimglist").hide();
+			$("#" + chatareaid).find("#" + moodid).show();
+		});
+
+		//选中表情后
+		$(".feelingimgsli li").click(function(){
+			var title = $(this).attr("title");
+			var chatareaid = $(this).parent().parent().parent().attr("chatareaid");
+			if(title != "delKey"){
+				title = '[' + title + ']';
+				var val = $("#" + chatareaid).find(".rightfootinput").val();
+				val += title;
+				$("#" + chatareaid).find(".rightfootinput").val(val);
+			}
+		});
+
+		//窗口在整个body中移动
+		$(".rightall").draggable({ 
+			handle: ".righttittle",
+			containment:"body",
+			scroll:false
+		});
+	});
+
+
+	//窗口最小化
+	$(document).on("click",".rightclosebtnmini",function(){
+
+		var miniid = $(this).attr("miniid");
+		var friendid = $(this).attr("friendid");
+		var chatareaid = $(this).attr("chatareaid");
+		var indeedname = $(this).attr("indeedname");
+		$("#" + chatareaid).hide();
+		$(".mininumarea").show();
+		var html = $(".mininumarea").html();
+		html += '<li class="mini" id="mini' + miniid + '" friendid = ' + friendid + ' chatareaid = ' + chatareaid + '>';
+		html += '	<span class="span010">' + indeedname + '</span>';
+		html += '</li>';
+		$(".mininumarea").html(html);
+		$("#" + friendid).attr("minimun","true");
+		$("#" + friendid).attr("openstate","true");
+
+	
+		//打开迷你窗口
+		$(".mini").click(function(){
+			var chatareaid = $(this).attr("chatareaid");
+		 	var friendid = $(this).attr("friendid");
+			$(this).remove();
+		 	$("#" + friendid).attr("minimun","false");
+		 	$("#" + chatareaid).show();
+		});
+	});
+
+	
+	
+});
+
+var imgshowsrc="css/images/open_arrow_fire.png";
+var imghidesrc="css/images/open_arrow.png";
+var index=0;
+
+function showbackground(){
+	var images={};
+	images[0] = "url('css/images/1.jpg')";
+	images[1] = "url('css/images/background_01.jpg')";
+	images[2] = "url('css/images/background_02.jpg')";
+	images[3] = "url('css/images/background_03.jpg')";
+	images[4] = "url('css/images/background_04.jpg')";
+	images[5] = "url('css/images/background_05.jpg')";
+	images[6] = "url('css/images/background_06.jpg')";
+	
+	$("body").css("background-image", images[index%7]);
+}
+
+
+function showdialog(idname){
 		var divtop = Math.random() * 25 + 75;
 		var divleft = Math.random() * 200 + 10;
-		var friendid = $(this).attr("friendid");
+		var friendid = $("#" + idname).attr("friendid");
 		var chatareaid = "chatarea" + friendid;
-		var indeedname = $(this).find(".midindeedname").html();
-		var openstate = $(this).attr("openstate");
+		var indeedname = $("#" + idname).find(".midindeedname").html();
+		var openstate = $("#" + idname).attr("openstate");
+		var minimun = $("#" + idname).attr("minimun");
 		$(".rightall").css("z-index","15");
 		if(openstate=="false"){
-			var html=$("#allright").html();
+			var html = $("#allright").html();
 			html += '<div class="rightall" id=' + chatareaid + '>';
 			html += '	<div class="righttittle">';
-			html += '		<div class="rightdownbtn">';
+			html += '		<div class="rightdownbtn" chatareaid = ' + chatareaid + ' openstate="false">';
 			html += '			<div class="rightdownbtnpic">';
 			html += '				<img src="css/images/pannel-arrow-down.png">';
 			html += '			</div>';
 			html += '		</div>';
 			html += '		<span class="span07">' + indeedname + '</span>';
+			html += '		<div class="rightclosebtnmini" miniid=' + friendid + ' friendid = "friend' + friendid + '" chatareaid = ' + chatareaid + ' indeedname = ' + indeedname + '>';
+			html += '			<span class="span06">最小化</span>';
+			html += '		</div>';
 			html += '		<div class="rightclosebtn" friendid = "friend' + friendid + '" chatareaid = ' + chatareaid + '>';
 			html += '			<span class="span06">关闭</span>';
+			html += '		</div>';
+			html += '		<div class="directiondown">';
+			html += '			<ul>';
+			html += '				<li class="directionli">';
+			html += '					<div class="directionlipic position10"></div>';
+			html += '					<span class="span001">群成员</span>';
+			html += '				</li>';
+			html += '				<li class="directionli">';
+			html += '					<div class="directionlipic position42"></div>';
+			html += '					<span class="span001">群资料</span>';
+			html += '				</li>';
+			html += '				<li class="directionli">';
+			html += '					<div class="directionlipic position43"></div>';
+			html += '					<span class="span001">聊天记录</span>';
+			html += '				</li>';
+			html += '			</ul>';
 			html += '		</div>';
 			html += '	</div>';
 			html += '	<div class="rightcontent"></div>';
@@ -186,7 +372,7 @@ $(function(){
 			html += '		<div class="inputarea">';
 			html += '			<input class="rightfootinput">';
 			html += '		</div>';
-			html += '		<div class="rightfootsend"><span>发送</span></div>';
+			html += '		<div class="rightfootsend" chatareaid = ' + chatareaid + '><span>发送</span></div>';
 			html += '	</div>';
 			/*表情区域*/
 			html += '	<div class="feelingarea">';
@@ -432,78 +618,19 @@ $(function(){
 				"left" : divleft + "px",
 				"z-index" : "20"
 			});
-			$(this).attr("openstate","true");
-		}else{
-			//将已有的置顶
-			$(".rightall").css("z-index","15");
-			$("#" + chatareaid).css("z-index","20");
-		};	
-
-		//关闭按钮
-		$(".rightclosebtn").click(function(){
-			var friendid = $(this).attr("friendid");
-			var chatareaid = $(this).attr("chatareaid");
-			/*alert(indeedname);*/
-			$("#" + chatareaid).remove();
-			$("#" + friendid).attr("openstate","false");
-		});
-
-		//将选中的置顶
-		$(".rightall").click(function(){
-			$(".rightall").css("z-index","15");
-			$(this).css("z-index","20");
-		});
-		
-		//大笑脸表情按钮
-		$(".rightfootsmile").click(function(){
-			var openstate = $(this).attr("openstate");
-			var chatareaid = $(this).attr("chatareaid");
-			if(openstate == "false"){
-				$("#" + chatareaid).find(".rightcontent").css("height","98px");
-				$("#" + chatareaid).find(".feelingarea").show();
-				$(this).attr("openstate","true");
-			}else{
-				$("#" + chatareaid).find(".rightcontent").css("height","400px");
-				$("#" + chatareaid).find(".feelingarea").hide();
-				$(this).attr("openstate","false");
-			};
-		});
-	
-		//圆点选择表情图
-		$(".littlecircleimgli").click(function(){
-			var chatareaid = $(this).parent().parent().attr("id");
-			var moodid=$(this).attr("moodid");
-			$(this).parent().find(".circle").css("background","none repeat scroll 0% 0% #808080");
-			$(this).find(".circle").css("background","none repeat scroll 0% 0% #000");
-			$("#" + chatareaid).find(".feelingimglist").hide();
-			$("#" + chatareaid).find("#" + moodid).show();
-		});
-
-		//选中表情后
-		$(".feelingimgsli li").click(function(){
-			var title = $(this).attr("title");
-			var chatareaid = $(this).parent().parent().parent().attr("chatareaid");
-			if(title != "delKey"){
-				title = '[' + title + ']';
-				var val = $("#" + chatareaid).find(".rightfootinput").val();
-				val += title;
-				$("#" + chatareaid).find(".rightfootinput").val(val);
+			$("#" + idname).attr("openstate","true");
+		}
+		else{
+			if( minimun == "true")
+			{
+				$("#" + chatareaid).show();
+				$("#" + idname).attr("minimun","false");
+				$("#mini" + friendid).remove();
 			}
-		});
-
-		//窗口在整个body中移动
-		$(".rightall").draggable({ 
-			containment:"body",
-			scroll:false
-		});
-	});
-	
-	
-	
-	
-
-
-});
-
-var imgshowsrc="css/images/open_arrow_fire.png";
-var imghidesrc="css/images/open_arrow.png";
+			else{
+				//将已有的置顶
+				$(".rightall").css("z-index","15");
+				$("#" + chatareaid).css("z-index","20");
+			}
+		};	
+}

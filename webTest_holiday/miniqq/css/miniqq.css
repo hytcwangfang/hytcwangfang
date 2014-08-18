@@ -4,7 +4,7 @@ div{ font-size: 12px;}
 ul,li{list-style: none;}
 a{ text-decoration: none; }
 
-body{ background-image: url("images/1.jpg");}
+body{ background-image: url("images/1.jpg"); background-repeat: no-repeat;background-size: 100% 110%;}
 
 #all{ width: 1030px; height: 600px; padding-top: 10px; }
 
@@ -131,6 +131,16 @@ body{ background-image: url("images/1.jpg");}
 .position15{ background-position: -90px 0;}
 .position16{ background-position: -108px 0;}
 
+.imageschange{ float: left; width: 200px; height:20px; margin-top: 20px; padding-left: 10px;}
+.changearea{ float: left; width: 120px; height: 20px;}
+.changeli{ cursor: pointer; float: left; width: 20px; height: 19px; margin-right: 10px; background-image: url('images/arrow_bottom.png');}
+.position44{background-position: -2px -2px;}
+.position44:hover{ background-position: -2px -42px;}
+.position45{background-position: -24px -2px;}
+.position45:hover{ background-position: -24px -42px;}
+.imagesright{float: left; width: 80px; height: 20px;  border-radius: 7px; background-color: rgba(0, 0, 0, 0.3);}
+.span002{display: block; text-align: center; font-size: 12px; line-height: 20px; color: #FFF;}
+
 #allright{ float: left; width: 700px; height: 600px; position: relative; z-index: 10px;}
 
 .rightall{ position: absolute; width: 700px; height: 495px; top: 60px; left: 10px; z-index: 15px;}
@@ -141,10 +151,21 @@ body{ background-image: url("images/1.jpg");}
 .rightdownbtnpic{ width: 14px; height: 14px; float: left; margin-top: 8px; margin-left: 16px;}
 .rightdownbtnpic img{ width: 14px; height: 14px;}
 .rightclosebtn{ position: absolute; top: 7px; right: 10px; cursor: pointer; border-radius: 6px; border: 1px solid #2C2727; width: 90px; height: 30px; border-color: #2C2727 #2C2727 #1A1919;background: linear-gradient(#555, #222) repeat scroll 0% 0% transparent;}
+.rightclosebtnmini{ position: absolute; top: 7px; right: 110px; cursor: pointer; border-radius: 6px; border: 1px solid #2C2727; width: 90px; height: 30px; border-color: #2C2727 #2C2727 #1A1919;background: linear-gradient(#555, #222) repeat scroll 0% 0% transparent;}
 .span06{display: block; width: 100%; height: 100%; line-height: 30px; text-align: center; color: #fff; font-size: 14px; font-weight: 400; font-family: '微软雅黑','Helvetica Neue',Helvetica,Arial;}
 .span07{ display: block; width: 100%; height: 45px; line-height: 45px; text-align: center; color: #fff; font-size: 18px; font-family: '微软雅黑','Helvetica Neue',Helvetica,Arial;}
 
-.rightcontent{ width: 100%; height: 400px; background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.5) !important;}
+
+.directiondown{ display: none; width: 698px; margin-left: 1px; height: 80px; position: absolute; top: 45px; left: 0px;box-shadow: 0px 2px 5px #141111; background: none repeat scroll 0% 0% #3C3C3C; z-index: 21px;}
+.directionli{ cursor: pointer; float: left; width: 80px; height: 80px; background-image: linear-gradient(#4E4E4E, #2C2C2C);float: left;border-left: 1px solid #555;border-right: 1px solid #222;}
+
+.directionlipic{ width:40px; height: 30px; margin: 20px 20px 10px 20px; background-image: url('images/menu_icons.png');}
+.span001{ display: block; width: 100%; height: 20px; line-height: 10px; text-align: center; color: #fff; font-size: 12px;}
+.position42{ background-position: -45px 0;}
+.position43{ background-position: -90px 0;}
+
+
+.rightcontent{ width: 100%; height: 400px; overflow: auto; background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.5) !important;}
 .textarea{ float: right; width: 400px; padding-right: 10px; padding-top: 10px; height: auto; }
 .textmasterright{ width: 45px; height: 45px; float: right;}
 .textcontentleft{float: left; width: 350px; height: auto;}
@@ -159,7 +180,8 @@ body{ background-image: url("images/1.jpg");}
 .rightfootsmile img{ width: 30px; height: 30px;}
 .inputarea{ float: left; width: 544px; height: 32px; margin-top: 9px; margin-left: 15px; border-radius: 6px; background-color: #fff;}
 .rightfootinput{ display: block; width: 524px; height: 32px; border: 0; font-size: 16px; color: #543333; font-family: '微软雅黑','Helvetica Neue',Helvetica,Arial; }
-.rightfootsend{ float: left; width: 60px; height: 40px; line-height: 40px; margin-left: 20px; margin-top: 5px; text-align: center; font-size: 16px; color: #fff;font-family: '微软雅黑','Helvetica Neue',Helvetica,Arial; background: linear-gradient(#5F9CC5, #396B9E) repeat scroll 0% 0% transparent; border-radius: 3px;}
+.rightfootsend{ cursor: pointer; float: left; width: 60px; height: 40px; line-height: 40px; margin-left: 20px; margin-top: 5px; text-align: center; font-size: 16px; color: #fff;font-family: '微软雅黑','Helvetica Neue',Helvetica,Arial; background: linear-gradient(#5F9CC5, #396B9E) repeat scroll 0% 0% transparent; border-radius: 3px;}
+.rightfootsend:hover{ background: linear-gradient(#396B9E,#5F9CC5) repeat scroll 0% 0% transparent;}
 
 .feelingarea{ display: none; width: 700px; height: 302px;}
 
@@ -214,4 +236,13 @@ body{ background-image: url("images/1.jpg");}
 .littlecircleimgli{ float: left; width: 15px; padding-left: 5px; padding-right: 5px; cursor: pointer;}
 .circle{background: none repeat scroll 0% 0% #808080; width: 15px;height: 15px;border-radius: 15px;}
 .circlespecial{ background: none repeat scroll 0% 0% #000;}
+
+.mininumarea{ display: none; position: absolute; bottom: 10px; right: 20px; width: auto; max-width: 700px; overflow-x: auto; height: 54px;}
+.mini{ cursor: pointer; margin-right: 5px; float: left; width: auto; min-width: 20px; height: 30px; padding: 10px; border: 2px solid #666; border-radius: 10px; background: linear-gradient(#DBEAF9, #C7CBCC) repeat scroll 0% 0% transparent;}
+.span010{ display: block; width: auto; height: 30px; line-height: 30px; color: #000; font-size: 16px; text-align: center; font-family: '微软雅黑','Helvetica Neue',Helvetica,Arial;}
+
+
+
+
+
 
