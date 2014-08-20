@@ -1,0 +1,66 @@
+*{ margin:0 auto; padding: 0;}
+img{ border: 0;}
+div{ font-size: 12px;}
+ul,li{list-style: none;}
+a{ text-decoration: none;  color: #006A92;}
+a:hover{ text-decoration: underline;}
+body{ padding-left: 10px;}
+
+#top1{ width: 100%; height: 66px; background-color: #fff;}
+#top1left{ float: left; width: 407px; height: 60px;}
+#top1right{ position: relative; float: right; width: 463px; height: 66px; background-image: url("images/top_bg104473.jpg"); }
+
+.logopic{ display: block; float: left; width: 215px; height: 60px;}
+.top1leftspans{ float: left; width: 190px; margin-top: 14px;}
+.span1{ display: block; text-align: left; font-size: 12px; font-family: "lucida Grande",Verdana; color: #000; line-height: 16px;}
+.span2{ display: inline; color: #1E5494; font-size: 12px; line-height: 26px;}
+.spanstyle{ color: #999; font-size: 12px;}
+
+.top1rightup1{ width: 100%; height: 30px; float: right; text-align: right; clear: both;}
+.span3{ display: inline; height: 30px; padding: 0 5px; line-height: 30px; font-size: 12px; color:#1E5494;}
+
+.inputarea{ position: absolute; right: 3px; bottom: 5px; width: 280px; height: 18px; float: right; border: 1px solid #999; }
+.searchpic1{ float: left; width: 18px; height: 18px; background-color: #fff; background-image: url("images/smartsearch104474.png"); background-position: -3px -2px;}
+.inputstyle{ float: left; width: 235px; height: 18px; border: 0; color: #999;}
+.searchpic2{ float: left; width: 27px; height: 18px; background-color: #fff; background-image: url("images/smartsearch104474.png"); background-position: -22px -2px;}
+
+#content{ width: 100%; height: 540px; border-top: 6px solid #89B5E9; border-left: 6px solid #89B5E9; border-top-left-radius: 5px;}
+#contentleft{ float: left; width: 174px; height: 540px; background-color: #89B5E9}
+.contentright{ float: left; width: 354; padding-left: 10px; height: 540px; overflow: auto;}
+
+#lefttop{ width: 174px; height: 107px; border-top-left-radius: 5px; border-top-right-radius: 12px; background-image: url("images/nav_bg16a498.gif"); background-position: -6px 0px;}
+#leftdown{ width: 168px; height: 428px; overflow: auto; margin-left: 0; background-color: #fff; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
+
+.lefttoplist{ width: 160px; height: 90px; }
+.lefttopli{ cursor: pointer; width: 140px; padding-left: 10px; padding-top: 8px; height: 20px; line-height: 20px;
+ 	color: #0055AC; font-weight: 700; font-size: 14px; font-family: "lucida Grande",Verdana;}
+.lefttopli:hover{ background-color: #C1D9F3;}
+.span4{ display: block; padding-left: 10px; float: left;}
+.pic2{ float: left; width: 22px; height: 24px; background-image: url("images/mail1d47c7.png");}
+.position0{ background-position: 0 0;}
+.position1{ background-position: 0 -33px;}
+.position2{ background-position: 0 -60px;}
+
+.solidborder{ width: 150px; border-bottom: 1px solid #D8DEE5; margin-top: 5px; margin-bottom: 5px;}
+
+.leftdownlist{ width: 150px; height: auto;}
+.leftdownli{ cursor: pointer; width: 140px; padding-left: 10px; height: 24px; line-height: 24px; font-size: 12px; color: #0055AC; font-family: "lucida Grande",Verdana;}
+.leftdownli:hover{ background-color: #C1D9F3;}
+.leftdownlispan{ width: 140px; padding-left: 10px; height: 24px; line-height: 24px; font-size: 12px; color: #0055AC; font-family: "lucida Grande",Verdana;}
+.leftdownlispecial{ font-weight: 700;}
+.leftlispecial{ cursor: pointer; padding: 0 3px;}
+.leftlispecial:hover{ background-color: #C1D9F3;}
+
+#leftlist2{ position: relative; width: 150px; height: auto;}
+.span5{ display: block; }
+.span501{ display: block;float: left;}
+.anotherpic1{ position: absolute; top: 9px; left: -2px; width: 13px; height: 13px; background-image: url("images/mail1d47c7.png"); background-position: -127px -32px; }
+.anotherslist{ display: none; width: 140px; padding-left: 10px; height: auto;}
+.anotherali{ cursor: pointer; width: 100%; height: 24px; line-height: 24px; font-size: 12px; color: #0055AC; font-family: "lucida Grande",Verdana;}
+.anotherpic2{ float: left; width: 20px; height: 24px;}
+.position3{}
+
+.receitop1{ width: 100%; height: 30px; line-height: 30px;}
+.span0101{ display: inline-block;}
+.span0102{ display: inline-block;}
+.span0103{ display: inline-block;}
