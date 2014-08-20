@@ -4,8 +4,9 @@ div{ font-size: 12px;}
 ul,li{list-style: none;}
 a{ text-decoration: none;  color: #006A92;}
 a:hover{ text-decoration: underline;}
-body{ padding-left: 10px;}
+body{ padding-left: 10px; font-family: "lucida Grande",Verdana;}
 
+/*****************************顶端内容****************************************************/
 #top1{ width: 100%; height: 66px; background-color: #fff;}
 #top1left{ float: left; width: 407px; height: 60px;}
 #top1right{ position: relative; float: right; width: 463px; height: 66px; background-image: url("images/top_bg104473.jpg"); }
@@ -25,16 +26,16 @@ body{ padding-left: 10px;}
 .searchpic2{ float: left; width: 27px; height: 18px; background-color: #fff; background-image: url("images/smartsearch104474.png"); background-position: -22px -2px;}
 
 
+/*****************************************************内容区域所有内容*********************************************************************/
 
-/*******************************内容区域***************************/
-
-#content{ width: 1350px; height: 540px; border-top: 6px solid #89B5E9; border-left: 6px solid #89B5E9; border-top-left-radius: 5px;}
-#contentleft{ float: left; width: 174px; height: 540px; background-color: #89B5E9}
+#content{ width: 1350px; height: 550px; border-top: 6px solid #89B5E9; border-left: 6px solid #89B5E9; border-top-left-radius: 5px;}
+#contentleft{ float: left; width: 174px; height: 550px; background-color: #89B5E9}
 /*.contentrightall{ float: left; width: 1170px; height: 540px; overflow-y: auto;}*/
-.contentright{ float: left; width: 1170px; padding-left: 6px; height: 540px; overflow-y: auto;}
+.contentright{ display: none; float: left; width: 1170px; padding-left: 6px; height: 550px; overflow-y: auto;}
 
+/**********************************内容左边**********************************/
 #lefttop{ width: 174px; height: 107px; border-top-left-radius: 5px; border-top-right-radius: 12px; background-image: url("images/nav_bg16a498.gif"); background-position: -6px 0px;}
-#leftdown{ width: 168px; height: 428px; overflow: auto; margin-left: 0; background-color: #fff; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
+#leftdown{ width: 168px; height: 438px; overflow: auto; margin-left: 0; background-color: #fff; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
 
 .lefttoplist{ width: 160px; height: 90px; }
 .lefttopli{ cursor: pointer; width: 140px; padding-left: 10px; padding-top: 8px; height: 20px; line-height: 20px;
@@ -65,6 +66,51 @@ body{ padding-left: 10px;}
 .anotherpic2{ float: left; width: 20px; height: 24px;}
 .position3{}
 
+/*********************内容分类***********************************/
+#shouyeid{ display: block;}
+
+/*******************************首页内容************************/
+.k1area1{ width: 1150px; height: 30px; line-height: 30px; margin-top: 20px; font-size: 16px; font-weight: 700;}
+.k1span101{ color: #000;}
+.k1span102{ color: #1E5494;}
+
+.k1area2{ width: 1150px; height: 26px; line-height: 26px; font-size: 14px; font-weight: 700;}
+.k1span201{ color: #798699; font-size: 12px;}
+.k1area3{ width: 1150px; height: 24px;}
+.k1area3pic1{ float: left; width: 16px; height: 16px; margin-top: 6px; background-image: url("images/mail1d47c7.png"); background-position: -32px -34px; }
+.k1area3spans{ float: left; padding-left: 10px; height: 24px; line-height: 24px; font-size: 12px;}
+
+.k1area4{ height: 28px; line-height: 28px; padding-left: 30px; font-size: 14px; font-weight: 700;}
+
+.k1area5{ width: 1150px; height: 232px; margin-top: 20px;}
+.k1area5left{ float: left; width: 830px; height: 230px; border: 1px solid #A7C5E2; border-radius: 3px; background-color: #EFF5FB;}
+.k1a5lefttitle{ width: 820px; height: 28px; padding-left: 10px; line-height: 28px; font-size: 14px; border-bottom: 1px solid #A7C5E2;}
+.k1a5leftpic{ width: 100%; height: 82px; border-bottom: 1px solid #A7C5E2;}
+.k1a5leftpicclass{ display: block; width: 828px; height: 81px; margin-top: 1px; background-image: url("images/jdgjs_qHW_201408110722.jpg"); background-position: 0 0;}
+.k1a5leftlist{ width: 827px; height: 100px; padding-top: 12px;}
+.k1a5leftli{ width: 780px; padding-left: 20px; height: 30px; color: #1E5494;}
+.k1a5leftlili{ float: left; width: 380px; height: 30px; line-height: 30px; font-size: 14px;}
+.lilipic{ float: left; width: 24px; height: 24px; margin-top: 3px; background-image: url("images/newicon_today_blue1e54d6.png");}
+.k1position1{ background-position: 0 -30px;}
+.k1position2{ background-position: 0 -60px;}
+.k1position3{ background-position: 0 -90px;}
+.k1position4{ background-position: 0 -120px;}
+.k1position5{ background-position: 0 -156px;}
+.lilispan{}
+
+.k1area5right{ float: left; width: 300px; height: 230px; border: 1px solid #A7C5E2; margin-left: 10px; border-radius: 3px; background-color: #EFF5FB;}
+
+
+
+
+
+
+
+
+
+
+
+/*******************************收件内容************************/
 .receitop1{ width: 1130px; padding: 0 7px 0 0; height: 30px; line-height: 30px; font-family: "lucida Grande",Verdana;}
 .span0101{ display: inline-block; font-size: 14px; font-weight: 700; color: #093665;}
 .span0102{ display: inline-block; font-size: 12px; color: #000;}
@@ -72,7 +118,7 @@ body{ padding-left: 10px;}
 
 
 .receifunc{ width: 1123px; height: 24px; padding: 7; background-color: #C1D9F3; border-bottom: 1px solid #C1C8D2; font-family: "lucida Grande",Verdana;}
-.funcli{ float: left; width: auto; height: 24px; font-size: 12px; line-height: 24px; color: #000; border-radius: 5px; padding: 0 10px; background-color: #fff; border: 1px solid #949595; margin-right: 5px;}
+.funcli{ cursor: pointer; float: left; width: auto; height: 24px; font-size: 12px; line-height: 24px; color: #000; border-radius: 5px; padding: 0 10px; background-color: #fff; border: 1px solid #949595; margin-right: 5px;}
 .searchchange{ margin-top: 5px;}
 
 .funclispecial{ float: right; width: auto; height: 24px;}
@@ -91,8 +137,8 @@ body{ padding-left: 10px;}
 .span301:hover{ text-decoration: underline;}
 
 
-.receitime{ width: 1130px; padding: 0 7px 0 0; height: 26px; margin-top: 5px; line-height: 30px; border-bottom: 2px solid #A7C5E2;}
-.span0104{ color: #1E5494; font-family: "lucida Grande",Verdana;}
+.receitime{ width: 1130px; padding-left: 7px; height: 26px; margin-top: 5px; line-height: 30px; border-bottom: 2px solid #A7C5E2;}
+.span0104{ cursor: pointer; color: #1E5494; font-family: "lucida Grande",Verdana;}
 
 .receilist{ width: 1144px; height: auto; font-family: "lucida Grande",Verdana;}
 .receili{ cursor: pointer; width: 1130px; padding: 0 7px 0 0; height: 24px; line-height: 24px; border-bottom: 1px solid #C1C8D2;}
@@ -104,3 +150,11 @@ body{ padding-left: 10px;}
 .span0302{ color: #A0A0A0;}
 .timeli{ position: relative; float: left; width: 102px; height: 24px; padding-left: 12px;}
 .starstyle{ position: absolute; width: 18px; height: 18px; top: 3px; right: 0; background-image: url("images/mail1d47c7.png"); background-position: -30px -158px;}
+
+.choice{ width: 1123px; padding: 0 7px; height: 24px; line-height: 24px; background-color: #F2F4F6;}
+
+
+
+
+
+
