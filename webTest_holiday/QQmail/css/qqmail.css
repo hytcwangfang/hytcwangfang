@@ -24,9 +24,14 @@ body{ padding-left: 10px;}
 .inputstyle{ float: left; width: 235px; height: 18px; border: 0; color: #999;}
 .searchpic2{ float: left; width: 27px; height: 18px; background-color: #fff; background-image: url("images/smartsearch104474.png"); background-position: -22px -2px;}
 
-#content{ width: 100%; height: 540px; border-top: 6px solid #89B5E9; border-left: 6px solid #89B5E9; border-top-left-radius: 5px;}
+
+
+/*******************************内容区域***************************/
+
+#content{ width: 1350px; height: 540px; border-top: 6px solid #89B5E9; border-left: 6px solid #89B5E9; border-top-left-radius: 5px;}
 #contentleft{ float: left; width: 174px; height: 540px; background-color: #89B5E9}
-.contentright{ float: left; width: 354; padding-left: 10px; height: 540px; overflow: auto;}
+/*.contentrightall{ float: left; width: 1170px; height: 540px; overflow-y: auto;}*/
+.contentright{ float: left; width: 1170px; padding-left: 6px; height: 540px; overflow-y: auto;}
 
 #lefttop{ width: 174px; height: 107px; border-top-left-radius: 5px; border-top-right-radius: 12px; background-image: url("images/nav_bg16a498.gif"); background-position: -6px 0px;}
 #leftdown{ width: 168px; height: 428px; overflow: auto; margin-left: 0; background-color: #fff; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
@@ -60,7 +65,42 @@ body{ padding-left: 10px;}
 .anotherpic2{ float: left; width: 20px; height: 24px;}
 .position3{}
 
-.receitop1{ width: 100%; height: 30px; line-height: 30px;}
-.span0101{ display: inline-block;}
-.span0102{ display: inline-block;}
-.span0103{ display: inline-block;}
+.receitop1{ width: 1130px; padding: 0 7px 0 0; height: 30px; line-height: 30px; font-family: "lucida Grande",Verdana;}
+.span0101{ display: inline-block; font-size: 14px; font-weight: 700; color: #093665;}
+.span0102{ display: inline-block; font-size: 12px; color: #000;}
+.span0103{ display: inline-block; font-size: 12px; color: #5FA207;}
+
+
+.receifunc{ width: 1123px; height: 24px; padding: 7; background-color: #C1D9F3; border-bottom: 1px solid #C1C8D2; font-family: "lucida Grande",Verdana;}
+.funcli{ float: left; width: auto; height: 24px; font-size: 12px; line-height: 24px; color: #000; border-radius: 5px; padding: 0 10px; background-color: #fff; border: 1px solid #949595; margin-right: 5px;}
+.searchchange{ margin-top: 5px;}
+
+.funclispecial{ float: right; width: auto; height: 24px;}
+.span201{ cursor: pointer; font-size: 12px; color: #093665; height: 12px; line-height: 24px;}
+.span201:hover{ text-decoration: underline;}
+
+
+.receititle{ width: 1130px; height: 21px; margin-top: 1px; line-height: 21px; padding: 0 7px 0 0; border-bottom: 1px solid #C1C8D2; background-color: #F2F4F6;}
+.receicheckbox{ float: left; width: 23px; height: 10px; padding-left: 5px; padding-top: 4px;}
+.divideborder{ float: left; width: 2px; height: 21px; background-image: url("images/mail1d47c7.png"); background-position: -127px 0px; }
+.receistyle{ float: left; width: 29px; height: 21px; margin-left: 5px; background-image: url("images/mail1d47c7.png"); background-position: 0 -80px; }
+.sender{ float: left;width: 135px; height: 21px; padding-left: 12px;}
+.theme{ float: left; width: 784px; height: 21px; padding-left: 12px;}
+.time{ float: left; width: 100px; height: 16px; padding-left: 12px;}
+.span301{ cursor: pointer;}
+.span301:hover{ text-decoration: underline;}
+
+
+.receitime{ width: 1130px; padding: 0 7px 0 0; height: 26px; margin-top: 5px; line-height: 30px; border-bottom: 2px solid #A7C5E2;}
+.span0104{ color: #1E5494; font-family: "lucida Grande",Verdana;}
+
+.receilist{ width: 1144px; height: auto; font-family: "lucida Grande",Verdana;}
+.receili{ cursor: pointer; width: 1130px; padding: 0 7px 0 0; height: 24px; line-height: 24px; border-bottom: 1px solid #C1C8D2;}
+.receili:hover{ background-color: rgba(193,200,210,0.3);}
+.receistyleli{ float: left; width: 18px; height: 18px; margin-left: 6px; margin-right: 14px; margin-top: 4px; background-image: url("images/mail1d47c7.png"); background-position: -48px -0px; }
+.senderli{ float: left;width: 137px; height: 24px; padding-left: 12px;}
+.themeli{ float: left; width: 786px; height: 24px; padding-left: 12px;}
+.span30101:hover{ text-decoration: none;}
+.span0302{ color: #A0A0A0;}
+.timeli{ position: relative; float: left; width: 102px; height: 24px; padding-left: 12px;}
+.starstyle{ position: absolute; width: 18px; height: 18px; top: 3px; right: 0; background-image: url("images/mail1d47c7.png"); background-position: -30px -158px;}
