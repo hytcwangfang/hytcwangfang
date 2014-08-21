@@ -27,7 +27,8 @@ body{ background-image: url("images/bg.jpg"); font-family: Verdana,"微软雅黑
 #top3left{ float: left; width: 123px; height: auto; border-top: 1px solid #C1C6CA; border-right: 1px solid #C1C6CA;}
 .top3ltli{ width: 123px; height: 52px; border-bottom: 1px solid #C1C6CA; background-image: url("images/banner_bg1.gif");}
 .top3ltlirt{ float: right; width: 96px; height: 30px; margin-top: 12px;}
-.top3ltlirtspan{ cursor: pointer; display: block; width: 100%; height: 15px; line-height: 15px; color: #C1C6CA; font-size: 14px;}
+.top3ltlirtspan{ cursor: pointer; display: block; width: 100%; height: 15px; line-height: 15px; color: #A3A3A3; font-size: 14px;}
+.fontsize12{ font-size: 12px;}
 
 #top3right{ float: right; width: 864px; height: 1674px;}
 .top3rttop1{ width: 862px; height: 460px;}
@@ -49,10 +50,62 @@ body{ background-image: url("images/bg.jpg"); font-family: Verdana,"微软雅黑
 
 .t3rtt2pic3{ width: 629px; height: 90px; margin-top: 10px; margin-bottom: 10px;}
 
+.piclist2{ width: 629px; height: 304px; margin-top: 10px;}
+.piclist2 a:hover{ text-decoration: none;}
+.picli2{ width: 629px; height: 152px;}
+.piclili{ position: relative; z-index: 5; float: left; width: 209px; height: 152px;}
+.bgpic1{ background-image: url("images/list_pic1.jpg");}
+.bgpic2{ background-color: #931A9D;}
+.bgpic3{ background-image: url("images/list_pic2.jpg");}
+.bgpic4{ background-color: #F46718;}
+.bgpic5{ background-image: url("images/list_pic3.jpg");}
+.bgpic6{ background-color: #E40077;}
+.picspans{ position: absolute; z-index: 8; top: 50px; left: 0; width: 209px; height: 40px;}
+.picspan{ display: block; width: 209px; height: 20px; line-height: 22px; font-size: 14px; text-align: center; color: #fff; font-weight: 700;}
+.pichover{ position: absolute; z-index: 10; top: 0; left: 0; background-image: url("images/list_bg.gif"); }
 
+.picshowarea3{ margin-top: 10px; margin-bottom: 10px; width: 629px; height: 133px; padding-top: 10px; border-top: 1px solid #C8C0C0;}
+.picforenext{ float: left; width: 25px; height: 133px;}
+.picfn{ width: 25px; height: 24px; margin-top: 60px;}
+.forepic{ background-image: url("images/magazine_left.gif");}
+.nextpic{ background-image: url("images/magazine_right.gif");}
+.picflash{ float: left; width: 555px; padding-left: 14px; padding-right: 10px; height: 133px;}
+.picflash img{ width: 97px; height: 133px; margin-left: 8px;}
 
+.picshowarea4{ width: 627px; height: 300px; margin-top: 10px;}
+.largepicarea{ width: 627px; height: 273px;}
+.forenextarea{ width: 627px; height: 27px;}
+.littlepic{ float: right; width: 13px; height: 12px; margin-top: 15px; margin-right: 10px;}
+.littlenext{ background-image: url("images/imgs/ad_right1.gif");}
+.littlefore{ background-image: url("images/imgs/ad_left1.gif");}
 
 
 
 
 .top3rttop2rt{ float: right; width: 228px; height: 1214px;}
+.rttitle{ width: 228px;  height: 15px; text-align: left; border-top: 1px solid #C8C0C0; border-bottom: 1px solid #C8C0C0; padding: 6px 0px; font-size: 14px; font-weight: 700; line-height: 15px; }
+.rttitle1span{ display: block; float: left; width: 110px; height: 15px; text-align: center; font-size: 14px;}
+
+.rtcontent{ width: 228px; height: 522px;}
+.rtcondownimg{ margin-left: 0; width: 114px; height: 13px;}
+.rtcondownpic{ width: 9px; height: 7px; margin-top: 3px;}
+.rtcondetai{ width: 224px; height: 507px; border: 1px solid #C8C0C0;}
+
+
+.lm1{ width: 224px; height: 28px; background-color: #fff; border-top: 2px solid #FF0000; border-bottom: 1px solid #D2D2D2;}
+.lm1left{ float: left; width: 16px; height: 14px; margin-left: 10px; margin-top: 6px; background-image: url("images/wb_logo16_a.png");}
+.lm1right{ display: block; float: left; width: 180px; padding-left: 10px; height: 28px; line-height: 28px; font-size: 12px; color: #0078B6;}
+
+.lm2{ width: 218px; height: 64px; padding: 10px 0px 0px 6px;}
+.lm2left{ float: left; width: 56px; height: 56px;}
+.lm2right{ width: 151px; height: 58px; float: right;}
+.lm2span1{ float: left; color: #0078B6; font-size: 14px; line-height: 16px;}
+.lm2span2{ float: left; display: block; width: 16px; height: 15px; margin-left: 2px; background-position: 0px -60px; background-image: url("images/icon_user.png");}
+.lm2span3{ display: block; height: 29px; background-position: 100% -28px; padding-top: 5px; background-image: url("images/btns_bg.png");}
+.lm2span4{ display: block; background-image: url('images/icon_follow.png'); width: 8px; height: 8px; background-repeat: no-repeat; margin: 2px 0px 0px 5px;}
+.lm2span5{ float: left; color: #FFF; font-style: normal; font-weight: 700; text-align: left;}
+
+
+
+
+
