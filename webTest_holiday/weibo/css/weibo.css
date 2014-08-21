@@ -4,6 +4,7 @@ div{ font-size: 12px;}
 ul,li{list-style: none;}
 a{ text-decoration: none;  color: #006A92;}
 a:hover{ text-decoration: underline;}
+
 #all{ width: 100%; height: 100%; overflow: auto; background-image: url("images/bg.jpg"); background-repeat: repeat-x; background-size: 30% 40%; background-color: #93C5EA;}
 
 .span1{ display: block; float: left; line-height: 35px; color: #C9C9C9; font-size: 14px; font-family: 微软雅黑,Arial; text-align: center;}
