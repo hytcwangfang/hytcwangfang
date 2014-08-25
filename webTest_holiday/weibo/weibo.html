@@ -4,7 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="css/weibo.css">
 	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="js/weibo.js"></script>
-	<title></title>
+	<title>腾讯微博</title>
 </head>
 <body>
 	<div id="all">
@@ -100,167 +100,894 @@
 					</ul>
 				</div>
 				<ul class="contenttitle">
-					<li><span class="span10 span10special" clickstate="true">全部广播</span></li>
-					<li><span class="span10" clickstate="false">微圈</span></li>
-					<li><span class="span10" clickstate="false">微博精编</span></li>
+					<li>
+						<span class="span10 span10special" clickstate="true" linkid="broadcontent">全部广播</span>
+					</li>
+					<li>
+						<span class="span10" clickstate="false" linkid="weiquan">微圈</span>
+					</li>
+					<li>
+						<span class="span10" clickstate="false" linkid="weibospecial">微博精编</span>
+					</li>
 					<ul class="detailpics">
 						<li class="detailpicli position9"></li>
 						<li class="detailpicli position10"></li>
 					</ul>
 				</ul>
-				<div class="littleremind">
+				<div class="littleremind" style="display:none;">
 					<span class="span01">刷不出好玩的微博
 						<a href="#" target="_blank" class="span02">试试猜你喜欢</a>
 					</span>
 				</div>
-				<ul class="detailarea">
-					<li class="detailareali">
-						<div class="detailleftheadpic">
-							<img src="css/images/50_003.jpg">
-						</div>
-						<div class="detailrighttext">
-							<div class="detailtitle">
-								<span class="span03">腾讯薇薇</span>
-								<ul class="biaoshilist">
-									<li class="biaoshili"></li>
-									<li class="biaoshili"></li>
-								</ul>
+				<div id="broadcontent" class="broadlist">
+					<ul class="detailarea">
+						<li class="detailareali">
+							<div class="detailleftheadpic">
+								<img src="css/images/50_003.jpg">
 							</div>
-							<div class="detailcontent">
-								<a href class="span04">#柯震东被抓#</a>
-								<span class="span05">消息确证，他曾与</span>
-								<a href class="span04">@陳妍希michelle @正在拍電影的九把刀</a>
-								<span class="span05">等拍摄的反毒品宣传片也随之曝光。柯震东因出演《那些年，我们一起追的女孩》《小时代》等走红。 今年以来，已有</span>
-								<a href class="span04">@李代沫 、@高虎</a>
-								<span class="span05">等多名综艺圈明星因涉毒被抓。</span>
+							<div class="detailrighttext">
+								<div class="detailtitle">
+									<span class="span03">腾讯薇薇</span>
+									<ul class="biaoshilist">
+										<li class="biaoshili"></li>
+										<li class="biaoshili"></li>
+									</ul>
+								</div>
+								<div class="detailcontent">
+									<a href class="span04">#柯震东被抓#</a>
+									<span class="span05">消息确证，他曾与</span>
+									<a href class="span04">@陳妍希michelle @正在拍電影的九把刀</a>
+									<span class="span05">等拍摄的反毒品宣传片也随之曝光。柯震东因出演《那些年，我们一起追的女孩》《小时代》等走红。 今年以来，已有</span>
+									<a href class="span04">@李代沫 、@高虎</a>
+									<span class="span05">等多名综艺圈明星因涉毒被抓。</span>
+								</div>
+								<div class="critiarea">
+									<a href="" class="critileft">
+										<div class="pic1"></div>
+										<span class="critispan1">8月15日 17:13</span>
+									</a>
+									<ul class="critiright">
+										<li class="critili" linkid="likedegree" title="赞">
+											<div class="critilileftpic"></div>
+											<span class="spancriti">(</span>
+											<span cishu="0" class="spancriti zanshu">0</span>
+											<span class="spancriti">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili" linkid="transquanti">
+											<span class="span1501">转播(</span>
+											<span class="span1501 zhuanbo">9419</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">评论(</span>
+											<span class="span1501 pinglun">2219</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">收藏</span>
+										</li>
+									</ul>
+								</div>
 							</div>
-							<div class="critiarea">
-								<a href="" class="critileft">
-									<div class="pic1"></div>
-									<span class="critispan1">8月15日 17:13</span>
-								</a>
-								<ul class="critiright">
-									<li class="critili">
-										<div class="critilileftpic"></div>
-										<span class="spancriti">(24958)</span>
-										<span class="spanstyle1">|</span>
-									</li>
-									<li class="critili">
-										<a href="" class="span1501">转播(9419)</a>
-										<span class="spanstyle1">|</span>
-									</li>
-									<li class="critili">
-										<a href="" class="span1501">评论(2219)</a>
-										<span class="spanstyle1">|</span>
-									</li>
-									<li class="critili">
-										<a href="" class="span1501">收藏</a>
-									</li>
-								</ul>
+						</li>
+					</ul>
+					<ul class="detailarea">
+						<li class="detailareali">
+							<div class="detailleftheadpic">
+								<img src="css/images/50.png">
 							</div>
-						</div>
-					</li>
-				</ul>
-				<ul class="detailarea">
-					<li class="detailareali">
-						<div class="detailleftheadpic">
-							<img src="css/images/50_003.jpg">
-						</div>
-						<div class="detailrighttext">
-							<div class="detailtitle">
-								<span class="span03">腾讯薇薇</span>
-								<ul class="biaoshilist">
-									<li class="biaoshili"></li>
-									<li class="biaoshili"></li>
-								</ul>
+							<div class="detailrighttext">
+								<div class="detailtitle">
+									<span class="span03">明明</span>
+									<ul class="biaoshilist">
+										<li class="biaoshili"></li>
+										<li class="biaoshili"></li>
+									</ul>
+								</div>
+								<div class="detailcontent">
+									<span class="span05">向着心中的太阳前进，前进。</span>
+								</div>
+								<div class="critiarea">
+									<a href="" class="critileft">
+										<div class="pic1"></div>
+										<span class="critispan1">6月21日 16:18</span>
+									</a>
+									<ul class="critiright">
+										<li class="critili" linkid="likedegree" title="赞">
+											<div class="critilileftpic"></div>
+											<span class="spancriti">(</span>
+											<span cishu="0" class="spancriti zanshu">0</span>
+											<span class="spancriti">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili" linkid="transquanti">
+											<span class="span1501">转播(</span>
+											<span class="span1501 zhuanbo">9419</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">评论(</span>
+											<span class="span1501 pinglun">2219</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">收藏</span>
+										</li>
+									</ul>
+								</div>
 							</div>
-							<div class="detailcontent">
-								<a href class="span04">#柯震东被抓#</a>
-								<span class="span05">消息确证，他曾与</span>
-								<a href class="span04">@陳妍希michelle @正在拍電影的九把刀</a>
-								<span class="span05">等拍摄的反毒品宣传片也随之曝光。柯震东因出演《那些年，我们一起追的女孩》《小时代》等走红。 今年以来，已有</span>
-								<a href class="span04">@李代沫 、@高虎</a>
-								<span class="span05">等多名综艺圈明星因涉毒被抓。</span>
+						</li>
+					</ul>
+					<ul class="detailarea">
+						<li class="detailareali">
+							<div class="detailleftheadpic">
+								<img src="css/images/501.jpg">
 							</div>
-							<div class="critiarea">
-								<a href="" class="critileft">
-									<div class="pic1"></div>
-									<span class="critispan1">8月15日 17:13</span>
-								</a>
-								<ul class="critiright">
-									<li class="critili">
-										<div class="critilileftpic"></div>
-										<span class="spancriti">(24958)</span>
-										<span class="spanstyle1">|</span>
-									</li>
-									<li class="critili">
-										<a href="" class="span1501">转播(9419)</a>
-										<span class="spanstyle1">|</span>
-									</li>
-									<li class="critili">
-										<a href="" class="span1501">评论(2219)</a>
-										<span class="spanstyle1">|</span>
-									</li>
-									<li class="critili">
-										<a href="" class="span1501">收藏</a>
-									</li>
-								</ul>
+							<div class="detailrighttext">
+								<div class="detailtitle">
+									<span class="span03">雪</span>
+									<ul class="biaoshilist">
+										<li class="biaoshili"></li>
+										<li class="biaoshili"></li>
+									</ul>
+								</div>
+								<div class="detailcontent">
+									<span class="span05">走你的路，让别人去说吧！</span>
+								</div>
+								<div class="critiarea">
+									<a href="" class="critileft">
+										<div class="pic1"></div>
+										<span class="critispan1">8月9日 11:15</span>
+									</a>
+									<ul class="critiright">
+										<li class="critili" linkid="likedegree" title="赞">
+											<div class="critilileftpic"></div>
+											<span class="spancriti">(</span>
+											<span cishu="0" class="spancriti zanshu">0</span>
+											<span class="spancriti">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili" linkid="transquanti">
+											<span class="span1501">转播(</span>
+											<span class="span1501 zhuanbo">9419</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">评论(</span>
+											<span class="span1501 pinglun">2219</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">收藏</span>
+										</li>
+									</ul>
+								</div>
 							</div>
-						</div>
-					</li>
-				</ul>
-				<ul class="detailarea">
-					<li class="detailareali">
-						<div class="detailleftheadpic">
-							<img src="css/images/50_003.jpg">
-						</div>
-						<div class="detailrighttext">
-							<div class="detailtitle">
-								<span class="span03">腾讯薇薇</span>
-								<ul class="biaoshilist">
-									<li class="biaoshili"></li>
-									<li class="biaoshili"></li>
-								</ul>
+						</li>
+					</ul>
+					<ul class="detailarea">
+						<li class="detailareali">
+							<div class="detailleftheadpic">
+								<img src="css/images/50_003.jpg">
 							</div>
-							<div class="detailcontent">
-								<a href class="span04">#柯震东被抓#</a>
-								<span class="span05">消息确证，他曾与</span>
-								<a href class="span04">@陳妍希michelle</a>
-								<a href class="span04">@正在拍電影的九把刀</a>
-								<span class="span05">等拍摄的反毒品宣传片也随之曝光。柯震东因出演《那些年，我们一起追的女孩》《小时代》等走红。今年以来，已有</span>
-								<a href class="span04">@李代沫</a>
-								<span class="span05"> 、</span>
-								<a href class="span04">@高虎</a>
-								<span class="span05">等多名综艺圈明星因涉毒被抓。</span>
+							<div class="detailrighttext">
+								<div class="detailtitle">
+									<span class="span03">腾讯薇薇</span>
+									<ul class="biaoshilist">
+										<li class="biaoshili"></li>
+										<li class="biaoshili"></li>
+									</ul>
+								</div>
+								<div class="detailcontent">
+									<a href class="span04">#柯震东被抓#</a>
+									<span class="span05">消息确证，他曾与</span>
+									<a href class="span04">@陳妍希michelle @正在拍電影的九把刀</a>
+									<span class="span05">等拍摄的反毒品宣传片也随之曝光。柯震东因出演《那些年，我们一起追的女孩》《小时代》等走红。 今年以来，已有</span>
+									<a href class="span04">@李代沫 、@高虎</a>
+									<span class="span05">等多名综艺圈明星因涉毒被抓。</span>
+								</div>
+								<div class="critiarea">
+									<a href="" class="critileft">
+										<div class="pic1"></div>
+										<span class="critispan1">8月15日 17:13</span>
+									</a>
+									<ul class="critiright">
+										<li class="critili" linkid="likedegree" title="赞">
+											<div class="critilileftpic"></div>
+											<span class="spancriti">(</span>
+											<span cishu="0" class="spancriti zanshu">0</span>
+											<span class="spancriti">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili" linkid="transquanti">
+											<span class="span1501">转播(</span>
+											<span class="span1501 zhuanbo">9419</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">评论(</span>
+											<span class="span1501 pinglun">2219</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">收藏</span>
+										</li>
+									</ul>
+								</div>
 							</div>
-							<div class="critiarea">
-								<a href="" class="critileft">
-									<div class="pic1"></div>
-									<span class="critispan1">8月15日 17:13</span>
-								</a>
-								<ul class="critiright">
-									<li class="critili">
-										<div class="critilileftpic"></div>
-										<span class="spancriti">(24958)</span>
-										<span class="spanstyle1">|</span>
-									</li>
-									<li class="critili">
-										<a href="" class="span1501">转播(9419)</a>
-										<span class="spanstyle1">|</span>
-									</li>
-									<li class="critili">
-										<a href="" class="span1501">评论(2219)</a>
-										<span class="spanstyle1">|</span>
-									</li>
-									<li class="critili">
-										<a href="" class="span1501">收藏</a>
-									</li>
-								</ul>
+						</li>
+					</ul>
+					<ul class="detailarea">
+						<li class="detailareali">
+							<div class="detailleftheadpic">
+								<img src="css/images/50.png">
 							</div>
-						</div>
-					</li>
-				</ul>
-
+							<div class="detailrighttext">
+								<div class="detailtitle">
+									<span class="span03">明明</span>
+									<ul class="biaoshilist">
+										<li class="biaoshili"></li>
+										<li class="biaoshili"></li>
+									</ul>
+								</div>
+								<div class="detailcontent">
+									<span class="span05">向着心中的太阳前进，前进。</span>
+								</div>
+								<div class="critiarea">
+									<a href="" class="critileft">
+										<div class="pic1"></div>
+										<span class="critispan1">6月21日 16:18</span>
+									</a>
+									<ul class="critiright">
+										<li class="critili" linkid="likedegree" title="赞">
+											<div class="critilileftpic"></div>
+											<span class="spancriti">(</span>
+											<span cishu="0" class="spancriti zanshu">0</span>
+											<span class="spancriti">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili" linkid="transquanti">
+											<span class="span1501">转播(</span>
+											<span class="span1501 zhuanbo">9419</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">评论(</span>
+											<span class="span1501 pinglun">2219</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">收藏</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="detailarea">
+						<li class="detailareali">
+							<div class="detailleftheadpic">
+								<img src="css/images/501.jpg">
+							</div>
+							<div class="detailrighttext">
+								<div class="detailtitle">
+									<span class="span03">雪</span>
+									<ul class="biaoshilist">
+										<li class="biaoshili"></li>
+										<li class="biaoshili"></li>
+									</ul>
+								</div>
+								<div class="detailcontent">
+									<span class="span05">走你的路，让别人去说吧！</span>
+								</div>
+								<div class="critiarea">
+									<a href="" class="critileft">
+										<div class="pic1"></div>
+										<span class="critispan1">8月9日 11:15</span>
+									</a>
+									<ul class="critiright">
+										<li class="critili" linkid="likedegree" title="赞">
+											<div class="critilileftpic"></div>
+											<span class="spancriti">(</span>
+											<span cishu="0" class="spancriti zanshu">0</span>
+											<span class="spancriti">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili" linkid="transquanti">
+											<span class="span1501">转播(</span>
+											<span class="span1501 zhuanbo">9419</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">评论(</span>
+											<span class="span1501 pinglun">2219</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">收藏</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div id="weiquan" class="broadlist">
+					<ul class="detailarea">
+						<li class="detailareali">
+							<div class="detailleftheadpic">
+								<img src="css/images/501.jpg">
+							</div>
+							<div class="detailrighttext">
+								<div class="detailtitle">
+									<span class="span03">雪</span>
+									<ul class="biaoshilist">
+										<li class="biaoshili"></li>
+										<li class="biaoshili"></li>
+									</ul>
+								</div>
+								<div class="detailcontent">
+									<span class="span05">走你的路，让别人去说吧！</span>
+								</div>
+								<div class="critiarea">
+									<a href="" class="critileft">
+										<div class="pic1"></div>
+										<span class="critispan1">8月9日 11:15</span>
+									</a>
+									<ul class="critiright">
+										<li class="critili" linkid="likedegree" title="赞">
+											<div class="critilileftpic"></div>
+											<span class="spancriti">(</span>
+											<span cishu="0" class="spancriti zanshu">0</span>
+											<span class="spancriti">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili" linkid="transquanti">
+											<span class="span1501">转播(</span>
+											<span class="span1501 zhuanbo">9419</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">评论(</span>
+											<span class="span1501 pinglun">2219</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">收藏</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="detailarea">
+						<li class="detailareali">
+							<div class="detailleftheadpic">
+								<img src="css/images/50_003.jpg">
+							</div>
+							<div class="detailrighttext">
+								<div class="detailtitle">
+									<span class="span03">腾讯薇薇</span>
+									<ul class="biaoshilist">
+										<li class="biaoshili"></li>
+										<li class="biaoshili"></li>
+									</ul>
+								</div>
+								<div class="detailcontent">
+									<a href class="span04">#柯震东被抓#</a>
+									<span class="span05">消息确证，他曾与</span>
+									<a href class="span04">@陳妍希michelle @正在拍電影的九把刀</a>
+									<span class="span05">等拍摄的反毒品宣传片也随之曝光。柯震东因出演《那些年，我们一起追的女孩》《小时代》等走红。 今年以来，已有</span>
+									<a href class="span04">@李代沫 、@高虎</a>
+									<span class="span05">等多名综艺圈明星因涉毒被抓。</span>
+								</div>
+								<div class="critiarea">
+									<a href="" class="critileft">
+										<div class="pic1"></div>
+										<span class="critispan1">8月15日 17:13</span>
+									</a>
+									<ul class="critiright">
+										<li class="critili" linkid="likedegree" title="赞">
+											<div class="critilileftpic"></div>
+											<span class="spancriti">(</span>
+											<span cishu="0" class="spancriti zanshu">0</span>
+											<span class="spancriti">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili" linkid="transquanti">
+											<span class="span1501">转播(</span>
+											<span class="span1501 zhuanbo">9419</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">评论(</span>
+											<span class="span1501 pinglun">2219</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">收藏</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="detailarea">
+						<li class="detailareali">
+							<div class="detailleftheadpic">
+								<img src="css/images/50.png">
+							</div>
+							<div class="detailrighttext">
+								<div class="detailtitle">
+									<span class="span03">明明</span>
+									<ul class="biaoshilist">
+										<li class="biaoshili"></li>
+										<li class="biaoshili"></li>
+									</ul>
+								</div>
+								<div class="detailcontent">
+									<span class="span05">向着心中的太阳前进，前进。</span>
+								</div>
+								<div class="critiarea">
+									<a href="" class="critileft">
+										<div class="pic1"></div>
+										<span class="critispan1">6月21日 16:18</span>
+									</a>
+									<ul class="critiright">
+										<li class="critili" linkid="likedegree" title="赞">
+											<div class="critilileftpic"></div>
+											<span class="spancriti">(</span>
+											<span cishu="0" class="spancriti zanshu">0</span>
+											<span class="spancriti">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili" linkid="transquanti">
+											<span class="span1501">转播(</span>
+											<span class="span1501 zhuanbo">9419</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">评论(</span>
+											<span class="span1501 pinglun">2219</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">收藏</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="detailarea">
+						<li class="detailareali">
+							<div class="detailleftheadpic">
+								<img src="css/images/501.jpg">
+							</div>
+							<div class="detailrighttext">
+								<div class="detailtitle">
+									<span class="span03">雪</span>
+									<ul class="biaoshilist">
+										<li class="biaoshili"></li>
+										<li class="biaoshili"></li>
+									</ul>
+								</div>
+								<div class="detailcontent">
+									<span class="span05">走你的路，让别人去说吧！</span>
+								</div>
+								<div class="critiarea">
+									<a href="" class="critileft">
+										<div class="pic1"></div>
+										<span class="critispan1">8月9日 11:15</span>
+									</a>
+									<ul class="critiright">
+										<li class="critili" linkid="likedegree" title="赞">
+											<div class="critilileftpic"></div>
+											<span class="spancriti">(</span>
+											<span cishu="0" class="spancriti zanshu">0</span>
+											<span class="spancriti">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili" linkid="transquanti">
+											<span class="span1501">转播(</span>
+											<span class="span1501 zhuanbo">9419</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">评论(</span>
+											<span class="span1501 pinglun">2219</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">收藏</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="detailarea">
+						<li class="detailareali">
+							<div class="detailleftheadpic">
+								<img src="css/images/50_003.jpg">
+							</div>
+							<div class="detailrighttext">
+								<div class="detailtitle">
+									<span class="span03">腾讯薇薇</span>
+									<ul class="biaoshilist">
+										<li class="biaoshili"></li>
+										<li class="biaoshili"></li>
+									</ul>
+								</div>
+								<div class="detailcontent">
+									<a href class="span04">#柯震东被抓#</a>
+									<span class="span05">消息确证，他曾与</span>
+									<a href class="span04">@陳妍希michelle @正在拍電影的九把刀</a>
+									<span class="span05">等拍摄的反毒品宣传片也随之曝光。柯震东因出演《那些年，我们一起追的女孩》《小时代》等走红。 今年以来，已有</span>
+									<a href class="span04">@李代沫 、@高虎</a>
+									<span class="span05">等多名综艺圈明星因涉毒被抓。</span>
+								</div>
+								<div class="critiarea">
+									<a href="" class="critileft">
+										<div class="pic1"></div>
+										<span class="critispan1">8月15日 17:13</span>
+									</a>
+									<ul class="critiright">
+										<li class="critili" linkid="likedegree" title="赞">
+											<div class="critilileftpic"></div>
+											<span class="spancriti">(</span>
+											<span cishu="0" class="spancriti zanshu">0</span>
+											<span class="spancriti">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili" linkid="transquanti">
+											<span class="span1501">转播(</span>
+											<span class="span1501 zhuanbo">9419</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">评论(</span>
+											<span class="span1501 pinglun">2219</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">收藏</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="detailarea">
+						<li class="detailareali">
+							<div class="detailleftheadpic">
+								<img src="css/images/50.png">
+							</div>
+							<div class="detailrighttext">
+								<div class="detailtitle">
+									<span class="span03">明明</span>
+									<ul class="biaoshilist">
+										<li class="biaoshili"></li>
+										<li class="biaoshili"></li>
+									</ul>
+								</div>
+								<div class="detailcontent">
+									<span class="span05">向着心中的太阳前进，前进。</span>
+								</div>
+								<div class="critiarea">
+									<a href="" class="critileft">
+										<div class="pic1"></div>
+										<span class="critispan1">6月21日 16:18</span>
+									</a>
+									<ul class="critiright">
+										<li class="critili" linkid="likedegree" title="赞">
+											<div class="critilileftpic"></div>
+											<span class="spancriti">(</span>
+											<span cishu="0" class="spancriti zanshu">0</span>
+											<span class="spancriti">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili" linkid="transquanti">
+											<span class="span1501">转播(</span>
+											<span class="span1501 zhuanbo">9419</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">评论(</span>
+											<span class="span1501 pinglun">2219</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">收藏</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div id="weibospecial" class="broadlist">
+					<ul class="detailarea">
+						<li class="detailareali">
+							<div class="detailleftheadpic">
+								<img src="css/images/50.png">
+							</div>
+							<div class="detailrighttext">
+								<div class="detailtitle">
+									<span class="span03">明明</span>
+									<ul class="biaoshilist">
+										<li class="biaoshili"></li>
+										<li class="biaoshili"></li>
+									</ul>
+								</div>
+								<div class="detailcontent">
+									<span class="span05">向着心中的太阳前进，前进。</span>
+								</div>
+								<div class="critiarea">
+									<a href="" class="critileft">
+										<div class="pic1"></div>
+										<span class="critispan1">6月21日 16:18</span>
+									</a>
+									<ul class="critiright">
+										<li class="critili" linkid="likedegree" title="赞">
+											<div class="critilileftpic"></div>
+											<span class="spancriti">(</span>
+											<span cishu="0" class="spancriti zanshu">0</span>
+											<span class="spancriti">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili" linkid="transquanti">
+											<span class="span1501">转播(</span>
+											<span class="span1501 zhuanbo">9419</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">评论(</span>
+											<span class="span1501 pinglun">2219</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">收藏</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="detailarea">
+						<li class="detailareali">
+							<div class="detailleftheadpic">
+								<img src="css/images/50_003.jpg">
+							</div>
+							<div class="detailrighttext">
+								<div class="detailtitle">
+									<span class="span03">腾讯薇薇</span>
+									<ul class="biaoshilist">
+										<li class="biaoshili"></li>
+										<li class="biaoshili"></li>
+									</ul>
+								</div>
+								<div class="detailcontent">
+									<a href class="span04">#柯震东被抓#</a>
+									<span class="span05">消息确证，他曾与</span>
+									<a href class="span04">@陳妍希michelle @正在拍電影的九把刀</a>
+									<span class="span05">等拍摄的反毒品宣传片也随之曝光。柯震东因出演《那些年，我们一起追的女孩》《小时代》等走红。 今年以来，已有</span>
+									<a href class="span04">@李代沫 、@高虎</a>
+									<span class="span05">等多名综艺圈明星因涉毒被抓。</span>
+								</div>
+								<div class="critiarea">
+									<a href="" class="critileft">
+										<div class="pic1"></div>
+										<span class="critispan1">8月15日 17:13</span>
+									</a>
+									<ul class="critiright">
+										<li class="critili" linkid="likedegree" title="赞">
+											<div class="critilileftpic"></div>
+											<span class="spancriti">(</span>
+											<span cishu="0" class="spancriti zanshu">0</span>
+											<span class="spancriti">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili" linkid="transquanti">
+											<span class="span1501">转播(</span>
+											<span class="span1501 zhuanbo">9419</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">评论(</span>
+											<span class="span1501 pinglun">2219</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">收藏</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="detailarea">
+						<li class="detailareali">
+							<div class="detailleftheadpic">
+								<img src="css/images/501.jpg">
+							</div>
+							<div class="detailrighttext">
+								<div class="detailtitle">
+									<span class="span03">雪</span>
+									<ul class="biaoshilist">
+										<li class="biaoshili"></li>
+										<li class="biaoshili"></li>
+									</ul>
+								</div>
+								<div class="detailcontent">
+									<span class="span05">走你的路，让别人去说吧！</span>
+								</div>
+								<div class="critiarea">
+									<a href="" class="critileft">
+										<div class="pic1"></div>
+										<span class="critispan1">8月9日 11:15</span>
+									</a>
+									<ul class="critiright">
+										<li class="critili" linkid="likedegree" title="赞">
+											<div class="critilileftpic"></div>
+											<span class="spancriti">(</span>
+											<span cishu="0" class="spancriti zanshu">0</span>
+											<span class="spancriti">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili" linkid="transquanti">
+											<span class="span1501">转播(</span>
+											<span class="span1501 zhuanbo">9419</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">评论(</span>
+											<span class="span1501 pinglun">2219</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">收藏</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="detailarea">
+						<li class="detailareali">
+							<div class="detailleftheadpic">
+								<img src="css/images/50_003.jpg">
+							</div>
+							<div class="detailrighttext">
+								<div class="detailtitle">
+									<span class="span03">腾讯薇薇</span>
+									<ul class="biaoshilist">
+										<li class="biaoshili"></li>
+										<li class="biaoshili"></li>
+									</ul>
+								</div>
+								<div class="detailcontent">
+									<a href class="span04">#柯震东被抓#</a>
+									<span class="span05">消息确证，他曾与</span>
+									<a href class="span04">@陳妍希michelle @正在拍電影的九把刀</a>
+									<span class="span05">等拍摄的反毒品宣传片也随之曝光。柯震东因出演《那些年，我们一起追的女孩》《小时代》等走红。 今年以来，已有</span>
+									<a href class="span04">@李代沫 、@高虎</a>
+									<span class="span05">等多名综艺圈明星因涉毒被抓。</span>
+								</div>
+								<div class="critiarea">
+									<a href="" class="critileft">
+										<div class="pic1"></div>
+										<span class="critispan1">8月15日 17:13</span>
+									</a>
+									<ul class="critiright">
+										<li class="critili" linkid="likedegree" title="赞">
+											<div class="critilileftpic"></div>
+											<span class="spancriti">(</span>
+											<span cishu="0" class="spancriti zanshu">0</span>
+											<span class="spancriti">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili" linkid="transquanti">
+											<span class="span1501">转播(</span>
+											<span class="span1501 zhuanbo">9419</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">评论(</span>
+											<span class="span1501 pinglun">2219</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">收藏</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="detailarea">
+						<li class="detailareali">
+							<div class="detailleftheadpic">
+								<img src="css/images/50.png">
+							</div>
+							<div class="detailrighttext">
+								<div class="detailtitle">
+									<span class="span03">明明</span>
+									<ul class="biaoshilist">
+										<li class="biaoshili"></li>
+										<li class="biaoshili"></li>
+									</ul>
+								</div>
+								<div class="detailcontent">
+									<span class="span05">向着心中的太阳前进，前进。</span>
+								</div>
+								<div class="critiarea">
+									<a href="" class="critileft">
+										<div class="pic1"></div>
+										<span class="critispan1">6月21日 16:18</span>
+									</a>
+									<ul class="critiright">
+										<li class="critili" linkid="likedegree" title="赞">
+											<div class="critilileftpic"></div>
+											<span class="spancriti">(</span>
+											<span cishu="0" class="spancriti zanshu">0</span>
+											<span class="spancriti">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili" linkid="transquanti">
+											<span class="span1501">转播(</span>
+											<span class="span1501 zhuanbo">9419</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">评论(</span>
+											<span class="span1501 pinglun">2219</span>
+											<span class="span1501">)</span>
+											<span class="spanstyle1">|</span>
+										</li>
+										<li class="critili">
+											<span class="span1501">收藏</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
 
 
 			</div>

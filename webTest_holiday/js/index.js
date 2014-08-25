@@ -31,7 +31,7 @@ function showdigtime(){
 	$("#d1").css("background-position","0px -"+ ( d1*30 + 1 ) +"px");
 	$("#d2").css("background-position","0px -"+ ( d2*30 + 1 ) +"px");
 	//时
-	var hour=ct.getHours();
+	var hour = ct.getHours();
 	var h1 = Math.floor((hour/10)%10);
 	var h2 = Math.floor(hour%10);
 	$("#h1").css("background-position","0px -"+ ( h1*30 + 1 ) +"px");

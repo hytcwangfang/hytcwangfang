@@ -4,7 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="css/tripnet.css">
 	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="js/tripnet.js"></script>
-	<title></title>
+	<title>新旅行</title>
 </head>
 <body>
 	<div id="top1">
@@ -15,7 +15,7 @@
 			</div>
 			<div class="top1right">
 				<div class="inputarea">
-					<input type="text" class="inputstyle" value="search here...">
+					<input type="text" class="inputstyle" name="search here..." value="search here...">
 				</div>
 				<div class="btnstyle signin">
 					<a href="" class="btnastyle">注册</a>
@@ -35,7 +35,7 @@
 	</div>
 	<div id="top3">
 		<ul id="top3left">
-			<li class="top3ltli">
+			<li class="top3ltli top3ltlispec">
 				<div class="top3ltlirt">
 					<span class="top3ltlirtspan">首页</span>
 					<span class="top3ltlirtspan fontsize12">HOMEPAGE</span>
@@ -53,11 +53,41 @@
 					<span class="top3ltlirtspan fontsize12">MAGAZINES</span>
 				</div>
 			</li>
-			<li class="top3ltli">
+			<li class="top3ltli" id="showlisthover">
 				<div class="top3ltlirt">
 					<span class="top3ltlirtspan">旅行秀场</span>
 					<span class="top3ltlirtspan fontsize12">SHOWTIME</span>
 				</div>
+				<ul class="showtimelist">
+					<li class="showtimeli">
+						<div class="showtimelileft">.</div>
+						<div class="top3ltlirt">
+							<span class="top3ltlirtspanspec">自驾车</span>
+							<span class="top3ltlirtspanspec fontsize12">DRIVING</span>
+						</div>
+					</li>
+					<li class="showtimeli">
+						<div class="showtimelileft">.</div>
+						<div class="top3ltlirt">
+							<span class="top3ltlirtspanspec">行装</span>
+							<span class="top3ltlirtspanspec fontsize12">LUGGAGE</span>
+						</div>
+					</li>
+					<li class="showtimeli">
+						<div class="showtimelileft">.</div>
+						<div class="top3ltlirt">
+							<span class="top3ltlirtspanspec">生活方式</span>
+							<span class="top3ltlirtspanspec fontsize12">LIFESTYLE</span>
+						</div>
+					</li>
+					<li class="showtimeli">
+						<div class="showtimelileft">.</div>
+						<div class="top3ltlirt">
+							<span class="top3ltlirtspanspec">旅行趋势</span>
+							<span class="top3ltlirtspanspec fontsize12">TRENDS</span>
+						</div>
+					</li>
+				</ul>
 			</li>
 			<li class="top3ltli">
 				<div class="top3ltlirt">
@@ -98,10 +128,10 @@
 				<div class="t3rttp12"></div>
 				<div class="t3rttp13">
 					<ul class="circlelist">
-						<li class="circleli"></li>
-						<li class="circleli"></li>
-						<li class="circleli"></li>
-						<li class="circleli"></li>
+						<li id="index0" index="0" class="circleli"></li>
+						<li id="index1" index="1" class="circleli"></li>
+						<li id="index2" index="2" class="circleli"></li>
+						<li id="index3" index="3" class="circleli"></li>
 					</ul>
 				</div>
 			</div>
@@ -116,16 +146,25 @@
 							<a href="">
 								<img src="css/images/20130910113109201.jpg">
 							</a>
+							<div class="hoverspan">
+								<span class="hoverspanli">《新旅行》出品人孙占涛摄影网站正式上线，一起分享旅行和摄影的魅力</span>
+							</div>
 						</li>
 						<li class="picli">
 							<a href="">
 								<img src="css/images/20130605050630711.jpg">
 							</a>
+							<div class="hoverspan">
+								<span class="hoverspanli">在6月24日这一天，人们用盖丘亚语祈祷时，城中回荡着震耳的呼喊声。</span>
+							</div>
 						</li>
 						<li class="picli">
 							<a href="">
 								<img src="css/images/20130604043721671.jpg">
 							</a>
+							<div class="hoverspan">
+								<span class="hoverspanli">在徽派村落、清凉江水、渔歌小调中探访旧日新安。</span>
+							</div>
 						</li>
 					</ul>
 					<div class="t3rtt2pic3">
@@ -201,17 +240,17 @@
 					</ul>
 					<div class="picshowarea3">
 						<div class="picforenext">
-							<div class="picfn forepic"></div>
+							<div btnstyle="forepic" class="picfn forepic"></div>
 						</div>
 						<div class="picflash">
-							<img src="css/images/imgs/thumb_97_133_20130119050541440.jpg">
-							<img src="css/images/imgs/thumb_97_133_20130802112105580.jpg">
-							<img src="css/images/imgs/thumb_97_133_20130311114229687.jpg">
-							<img src="css/images/imgs/thumb_97_133_20130410111202413.jpg">
-							<img src="css/images/imgs/thumb_97_133_20130508051823778.jpg">
+							<img id="curindex0" src="css/images/imgs/thumb_97_133_20130119050541440.jpg">
+							<img id="curindex1" src="css/images/imgs/thumb_97_133_20130802112105580.jpg">
+							<img id="curindex2" src="css/images/imgs/thumb_97_133_20130311114229687.jpg">
+							<img id="curindex3" src="css/images/imgs/thumb_97_133_20130410111202413.jpg">
+							<img id="curindex4" src="css/images/imgs/thumb_97_133_20130508051823778.jpg">
 						</div>
 						<div class="picforenext">
-							<div class="picfn nextpic"></div>
+							<div btnstyle="nextpic" class="picfn nextpic"></div>
 						</div>
 					</div>
 					<div class="t3rtt2title">
@@ -230,12 +269,12 @@
 				</div>
 				<div class="top3rttop2rt">
 					<div class="rttitle">						
-						<span class="rttitle1span color1">新浪微博</span>
+						<span linkid="xinlang" class="rttitle1span color1">新浪微博</span>
 						<span class="color2" style="display:block; width:2px; height:15px; float:left;">|</span>
-						<span class="rttitle1span">腾讯微博</span>
+						<span linkid="tengxun" class="rttitle1span">腾讯微博</span>
 					</div>
-					<div class="rtcontent">
-						<div class="rtcondownimg">
+					<div class="rtcontent" id="xinlang">
+						<div class="rtcondownimg" style="margin-left: 0;">
 							<div class="rtcondownpic">
 								<img src="css/images/weibo_sanjiao.gif">
 							</div>
@@ -258,54 +297,254 @@
 									</div>
 								</div>
 							</div>
-
-							
-							<div class="lm3"></div>
-							<span class="lm5"></span>
-							<ul class="lm6list">
-								<li class="lm6li">
+							<div class="lm3">
+								<span class="lm3content">#小新聊旅行#【十一长假出行攻略：国际漫游怎样最省钱】面对即将到来的十一长假，那么如何才能在外出旅行时既能满足上网、打电话等基本的通信需求，又能大大降低资费，小新已经为你准备了一些国际漫游省钱攻略，希望能给你有所帮助哦！ #小新聊旅行#【十一长假出行攻略：国际漫游怎样最省钱】面对即将到来的十一长假，那么如何才能在外出旅行时既能满足上网、打电话等基本的通信需求，又能大大降低资费，小新已经为你准备了一些国际漫游省钱攻略，希望能给你有所帮助哦！ #小新聊旅行#【十一长假出行攻略：国际漫游怎样最省钱】面对即将到来的十一长假，那么如何才能在外出旅行时既能满足上网、打电话等基本的通信需求，又能大大降低资费，小新已经为你准备了一些国际漫游省钱攻略，希望能给你有所帮助哦！ #小新聊旅行#【十一长假出行攻略：国际漫游怎样最省钱】面对即将到来的十一长假，那么如何才能在外出旅行时既能满足上网、打电话等基本的通信需求，又能大大降低资费，小新已经为你准备了一些国际漫游省钱攻略，希望能给你有所帮助哦！</span>
+							</div>
+							<span class="lm4span1">TA 的粉丝(219559)</span>
+							<a href="" class="lm4span1 lm4a">全部>></a>
+							<ul class="lm5list">
+								<li class="lm5li">
 									<ul>
-										<li class="lm6lili">
-											<img src="">
-											<span class="lm6span">隆情蜜意</span>
-										</li>
-										<li class="lm6lili">
-											<img src="">
-											<span class="lm6span">隆情蜜意</span>
-										</li>
-										<li class="lm6lili">
-											<img src="">
-											<span class="lm6span">隆情蜜意</span>
-										</li>
+										<a href="">
+											<li class="lm5lili">
+												<img src="css/images/0.jpg">
+												<span class="lm5span">隆情蜜意</span>
+											</li>
+										</a>
+										<a href="">
+											<li class="lm5lili">
+												<img src="css/images/1.jpg">
+												<span class="lm5span">小斌</span>
+											</li>
+										</a>
+										<a href="">
+											<li class="lm5lili">
+												<img src="css/images/3.jpg">
+												<span class="lm5span">手牵手在</span>
+											</li>
+										</a>
+									</ul>
+								</li>
+								<li class="lm5li">
+									<ul>
+										<a href="">
+											<li class="lm5lili">
+												<img src="css/images/0.jpg">
+												<span class="lm5span">隆情蜜意</span>
+											</li>
+										</a>
+										<a href="">
+											<li class="lm5lili">
+												<img src="css/images/1.jpg">
+												<span class="lm5span">小斌</span>
+											</li>
+										</a>
+										<a href="">
+											<li class="lm5lili">
+												<img src="css/images/3.jpg">
+												<span class="lm5span">手牵手在</span>
+											</li>
+										</a>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="rtcontent" id="tengxun">
+						<div class="rtcondownimg"  style="margin-right: 0;">
+							<div class="rtcondownpic">
+								<img src="css/images/weibo_sanjiao.gif">
+							</div>
+						</div>
+						<div class="rtcondetai">
+							<div class="lm1">
+								<div class="lm1left"></div>
+								<a href="" class="lm1right">腾讯微博</a>
+							</div>
+							<div class="lm2">
+								<div class="lm2left">
+									<a href=""><img src="css/images/7.jpg"></a>
+								</div>
+								<div class="lm2right">
+									<a href="" class="lm2span1"> Voyage新旅行</a>
+									<span class="lm2span2"></span>
+									<div class="lm2span3">
+										<span class="lm2span5">立即收听</span>
+									</div>
+								</div>
+							</div>
+							<div class="lm3">
+								<span class="lm3content">#小新聊旅行#【十一长假出行攻略：国际漫游怎样最省钱】面对即将到来的十一长假，那么如何才能在外出旅行时既能满足上网、打电话等基本的通信需求，又能大大降低资费，小新已经为你准备了一些国际漫游省钱攻略，希望能给你有所帮助哦！ #小新聊旅行#【十一长假出行攻略：国际漫游怎样最省钱】面对即将到来的十一长假，那么如何才能在外出旅行时既能满足上网、打电话等基本的通信需求，又能大大降低资费，小新已经为你准备了一些国际漫游省钱攻略，希望能给你有所帮助哦！ #小新聊旅行#【十一长假出行攻略：国际漫游怎样最省钱】面对即将到来的十一长假，那么如何才能在外出旅行时既能满足上网、打电话等基本的通信需求，又能大大降低资费，小新已经为你准备了一些国际漫游省钱攻略，希望能给你有所帮助哦！ #小新聊旅行#【十一长假出行攻略：国际漫游怎样最省钱】面对即将到来的十一长假，那么如何才能在外出旅行时既能满足上网、打电话等基本的通信需求，又能大大降低资费，小新已经为你准备了一些国际漫游省钱攻略，希望能给你有所帮助哦！</span>
+							</div>
+							<span class="lm4span1">TA 的粉丝(219559)</span>
+							<a href="" class="lm4span1 lm4a">全部>></a>
+							<ul class="lm5list">
+								<li class="lm5li">
+									<ul>
+										<a href="">
+											<li class="lm5lili">
+												<img src="css/images/0.jpg">
+												<span class="lm5span">隆情蜜意</span>
+											</li>
+										</a>
+										<a href="">
+											<li class="lm5lili">
+												<img src="css/images/1.jpg">
+												<span class="lm5span">小斌</span>
+											</li>
+										</a>
+										<a href="">
+											<li class="lm5lili">
+												<img src="css/images/3.jpg">
+												<span class="lm5span">手牵手在</span>
+											</li>
+										</a>
+									</ul>
+								</li>
+								<li class="lm5li">
+									<ul>
+										<a href="">
+											<li class="lm5lili">
+												<img src="css/images/1.jpg">
+												<span class="lm5span">小斌</span>
+											</li>
+										</a>
+										<a href="">
+											<li class="lm5lili">
+												<img src="css/images/3.jpg">
+												<span class="lm5span">手牵手在</span>
+											</li>
+										</a>
 									</ul>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<div class="rttitle">						
-						<span>业内资讯</span>
-						<span>NEWS</span>
+						<span class="color1">业内资讯</span>
+						<span class="color2">NEWS</span>
+						<a href="" class="morepic"></a>
 					</div>
 					<ul class="rtnewslist">
-						<li></li>
+						<li class="rtnewsli">
+							<div class="rtnewokpic"></div>
+							<a href="" class="rtnewokspan">bread n butter 2013秋冬新品发布会</a>
+						</li>
+						<li class="rtnewsli">
+							<div class="rtnewokpic"></div>
+							<a href="" class="rtnewokspan">品长城经典，赢葡园蜜月</a>
+						</li>
+						<li class="rtnewsli">
+							<div class="rtnewokpic"></div>
+							<a href="" class="rtnewokspan">RVF中国优秀葡萄酒2013年度大奖</a>
+						</li>
+						<li class="rtnewsli">
+							<div class="rtnewokpic"></div>
+							<a href="" class="rtnewokspan">阿布扎比旅游和文化发展局新举措</a>
+						</li>
+						<li class="rtnewsli">
+							<div class="rtnewokpic"></div>
+							<a href="" class="rtnewokspan">2013长城葡萄酒杯品酒师大赛启动</a>
+						</li>
 					</ul>
 					<div class="rttitle">						
-						<span>新刊速递</span>
-						<span>MAGAZINE</span>
+						<span class="color1">新刊速递</span>
+						<span class="color2">MAGAZINE</span>
+						<a href="" class="morepic"></a>
 					</div>
 					<div class="magazinearea">
-						<div class="magazineleft"></div>
-						<div class="magazineright"></div>
+						<div class="magazineleft">
+							<a href=""><img src="css/images/thumb_134_172_20130604034714657.jpg"></a>
+						</div>
+						<div class="magazineright">
+							<span class="magaspan">黄圣依 戛纳的小城大梦</span>
+							<span class="magaspan">好的电影讲述的都是真实的...</span>
+							<img src="css/images/erwei.jpg" style="width:89px; height=89px; margin-top: 10px;">
+						</div>
 					</div>
 					<div class="rttitle">
-						<span>热门标签</span>
-						<span>HOT TAGS</span>
+						<span class="color1">热门标签</span>
+						<span class="color2">HOT TAGS</span>
 					</div>
-					<div class="flashtext"></div>
+					<div class="flashtext">
+						<img src="css/images/tags_bg.jpg">
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>	
-
+	<div id="top4">
+		<div class="top4content">
+			<span class="top4span1">联办媒体:</span>
+			<span class="top4span2">
+				<a href="">财经</a>
+				<a href="">视觉</a>
+				<a href="">他生活</a>
+				<a href="">新地产</a>
+				<a href="">成功营销</a>
+				<a href="">动感驾驭</a>
+				<a href="">美好家园</a>
+				<a href="">体育画报</a>
+				<a href="">TimeOut</a>
+				<a href="">PSA</a>
+				<a href="">China</a>
+				<a href="">PC</a>
+				<a href="">magazine</a>
+				<a href="">CIO信息方略</a>
+				<a href="">葡萄酒评论</a>
+				<a href="">红秀GRAZIA</a>
+				<a href="">哈佛商业评论</a>
+				<a href="">证券市场周刊</a>
+				<a href="">证劵市场红周刊</a>
+				<a href="">中国汽车画报</a>
+			</span>                     
+			<span class="top4span1">友情链接:</span>
+			<span class="top4span2">
+				<a href="">途牛</a>
+				<a href="">搜狐</a>
+				<a href="">腾讯</a>
+				<a href="">精品网</a>
+				<a href="">当当网</a>
+				<a href="">爱奇艺</a>
+				<a href="">蚂蜂窝</a>
+				<a href="">爱结婚礼</a>
+				<a href="">yoku优酷</a>
+				<a href="">美食美酒网</a>
+				<a href="">yoka男士网</a>
+				<a href="">TARGET致品网</a>             
+			</span>
+		</div>
+	</div>
+	<div id="top5">
+		<div class="top5content">
+			<div class="top5left">
+				<a href=""><img src="css/images/foot_logo.png"></a>
+			</div>
+			<div class="top5right">
+				<span class="top5span">
+					<span>《新旅行》杂志社：北京市朝阳区朝外大街22号泛利大厦5层510室</span>
+					<span> 邮编：100020</span>
+				</span>
+				<span class="top5span">
+					<span>5F,Prime Tower,22 Chaoyangmenwai Ave,Beijing. 100020 P.R.China</span>
+				</span>
+				<span class="top5span">
+					<span>编辑部：（010）85650437</span>
+					<span>广告热线：（010）85650192</span>
+					<span> 网络广告：（010）85657380</span>
+				</span>
+				<span class="top5span">
+					<span>市场部：（010）85650325</span>
+					<span>发行服务：（010）85650313</span>
+					<span>网络受众数据分析</span>
+				</span>
+				<span class="top5span">
+					<span>京ICP证[010201号]</span>
+					<span>增值电信业务经营许可证[B2-20040250]</span>
+					<span>广告经营许可证[京海工商广字第0407号</span>
+				</span>
+			</div>
+		</div>
+	</div> 
 </body>
 </html>

@@ -64,7 +64,7 @@ a:hover{ text-decoration: underline;}
 .moodpic{ float: left; width: 20px; height: 20px; margin-top: 4px; background-image: url("images/b1_20140716.png");}
 
 .span5{ display: block; float: right; color: #000; line-height: 30px; margin-top: 4px; font-size: 12px; text-align: left;}
-.broadcastpic{ float: right; width: 85px; height: 27px; margin-top: 3px; background-image: url("images/b1_20140716.png"); background-position: 0 0;}
+.broadcastpic{ cursor: pointer; float: right; width: 85px; height: 27px; margin-top: 3px; background-image: url("images/b1_20140716.png"); background-position: 0 0;}
 
 
 .flashpics{ position: relative; width: 580px; height: 90px; margin-top: 30px; margin-bottom: 30px; z-index: 15;}
@@ -83,6 +83,11 @@ a:hover{ text-decoration: underline;}
 .position9{ background-position: -323px 0px;}
 .position10{ background-position: -308px 0px;}
 
+.broadlist{ width: 580px; height: auto;}
+#broadcontent{ display: block;}
+#weiquan{ display: none;}
+#weibospecial{ display: none;}
+
 .littleremind{ width: 580px; height: 26px; border: 1px solid #F4E4B4; margin-top: 20px;}
 .span01{ display: inline-block; text-align: center; width: 580px; height: 26px; font-size: 14px; line-height: 26px; color: #666; float: left;}
 .span02{ text-decoration: underline; text-align: left; color: #EA7F55; }
@@ -91,8 +96,8 @@ a:hover{ text-decoration: underline;}
 .detailarea{ width: 580px; height: auto; padding-bottom: 10px; padding-top: 20px; }
 .detailareali{ width: 100%; height: 150px; border-bottom: 1px dotted #D8D8D8;}
 
-.detailleftheadpic{ float: left; width: 50px; padding-left: 20px; height: auto; }
-.detailleftheadpic img{ width: 50px; height: 50px;}
+.detailleftheadpic{ float: left; width: 50px; padding-left: 20px; border-radius: 5px; height: auto; }
+.detailleftheadpic img{ width: 50px; height: 50px; border-radius: 5px;}
 
 .detailrighttext{ float: left; width: 500px; padding-left: 10px; height: auto;}
 .detailtitle{ width: 100%; height: 30px;}
@@ -102,6 +107,7 @@ a:hover{ text-decoration: underline;}
 .detailcontent{ width: 500px; height: auto;}
 .span04{ display: inline; height: 20px; line-height: 20px; color: #006A92; font-size: 14px;}
 .span05{ display: inline; height: 20px; line-height: 20px; color: #000; font-size: 14px;}
+
 
 
 /*319px;*/
@@ -193,11 +199,11 @@ a:hover{ text-decoration: underline;}
 .spancolor{ color: #666;}
 
 .critiarea{ width: 100%; height: 30px; line-height: 30px;}
-.critileft{ float: left; display: block; width:40%; height: 30px;}
+.critileft{ float: left; display: block; width:auto; height: 30px;}
 .pic1{ float: left; width: 15px; height: 15px; margin-top: 5px; background-image: url("images/b1_20140716.png"); background-position: -210px -111px;}
 .critispan1{ display: block; float: left; padding-left: 8px; color: #759AAD; font-size: 13px; }
 
-.critiright{ float: right; width: 60%; text-align: left; height: 30px;}
+.critiright{ float: right; width: auto; text-align: left; height: 30px;}
 .critili{ float: left; height: 30px; line-height: 30px;}
 .critilileftpic{ cursor: pointer; float: left; width: 15px; height: 15px; margin-top: 6px; background-image: url("images/b1_20140716.png"); background-position: -290px -114px; }
 .spancriti{ float: left; cursor: pointer; font-size: 13px; color: #006A92; }

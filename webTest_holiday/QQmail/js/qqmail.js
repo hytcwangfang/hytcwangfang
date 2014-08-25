@@ -12,4 +12,16 @@ $(function(){
 		$(".k1a5rightcontent").hide();
 		$("#" + linkdetail).show();
 	});
+
+	$(".funcli").click(function(){
+		var linkclass = $(this).attr("linkclass");
+		var openstate = $(this).attr("openstate");
+		if (openstate == "false") {
+			$("." + linkclass).show();
+			$(this).attr("openstate","true");
+		}else{
+			$("." + linkclass).hide();
+			$(this).attr("openstate","false");
+		}
+	});
 });

@@ -6,11 +6,24 @@ $(function(){
 		timehandle = setTimeout('showflash()',2000);
 	});*/
 	$(".contentlefttxtli2").click(function(){
+		clearTimeout(timehandle);
 		$(".contentlefttxtli2").show();
 		$(".contentlefttxtlipic").hide();
 	    currentid = $(this).parent().attr("sortid");
-		$(this).hide();
-		$(this).next().show();
+		/*$(this).hide();
+		$(this).next().show();*/
+		$("#contentleftpic2").hide();
+		$("#contentleftpic3").hide();
+		$("#contentleftpic4").hide();
+		$("#contentleftpic1").hide();
+		$(".contentlefttxtli2").show();
+		$(".contentlefttxtlipic").hide();
+		$("#li"+currentid).hide();
+		$("#"+currentid).show();
+		var curimg = $("#contentleftpic" + currentid).attr("imgurl");
+		$("#contentleftpic" + currentid).css("background-image","url("+curimg+")");
+		$("#contentleftpic" + currentid).show();
+		timehandle = setTimeout('showflash()',2000);
 	});
 });
 
