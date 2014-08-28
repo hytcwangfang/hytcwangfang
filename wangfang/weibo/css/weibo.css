@@ -55,7 +55,7 @@ a:hover{ text-decoration: underline;}
 
 
 .textarea{ width: 580px; height: 80px; border: 1px solid #999; border-radius: 3px;}
-.textareastyle{ width: 580px; height: 80px; overflow: auto; border-radius: 3px; border: 0;}
+.textareastyle{resize: none; width: 580px; height: 80px; overflow: auto; border-radius: 3px; border: 0;}
 
 
 .moodarea{ width: 580px; height: 30px;}
@@ -76,6 +76,8 @@ a:hover{ text-decoration: underline;}
 
 .contenttitle{ position: relative; width: 580px; height: 30px; border-bottom: 1px solid #E4E4E4;}
 .span10{ cursor: pointer; display: block; float: left; width: auto; height: 28px; line-height: 28px; color: #999; font-size: 12px; text-align: center; padding: 0 10px;}
+/*.span10:hover{border-bottom: 2px solid #999;}*/
+
 .span10special{border-bottom: 2px solid #229BD7; color: #000; font-weight: 700;}
 
 .detailpics{ position: absolute; width: auto; height: 16px; top: 7px; right: 5px;}
@@ -87,14 +89,16 @@ a:hover{ text-decoration: underline;}
 #broadcontent{ display: block;}
 #weiquan{ display: none;}
 #weibospecial{ display: none;}
-
+/******************************清除浮动****************************/
 .littleremind{ width: 580px; height: 26px; border: 1px solid #F4E4B4; margin-top: 20px;}
 .span01{ display: inline-block; text-align: center; width: 580px; height: 26px; font-size: 14px; line-height: 26px; color: #666; float: left;}
 .span02{ text-decoration: underline; text-align: left; color: #EA7F55; }
 
 
-.detailarea{ width: 580px; height: auto; padding-bottom: 10px; padding-top: 20px; }
-.detailareali{ width: 100%; height: 150px; border-bottom: 1px dotted #D8D8D8;}
+.detailarea{ width: 580px; height: auto; min-height: 100px; padding-bottom: 10px; padding-top: 20px; }
+.detailareali{ width: 580px; height: auto; min-height: 100px; border-bottom: 1px dotted #D8D8D8;}
+.detailarea:after{ width: 0; height: 0; clear: both; display: block; content: "."; visibility: hidden;}
+.detailareali:after{ width: 0; height: 0; clear: both; display: block; content: "."; visibility: hidden;}
 
 .detailleftheadpic{ float: left; width: 50px; padding-left: 20px; border-radius: 5px; height: auto; }
 .detailleftheadpic img{ width: 50px; height: 50px; border-radius: 5px;}
@@ -108,7 +112,19 @@ a:hover{ text-decoration: underline;}
 .span04{ display: inline; height: 20px; line-height: 20px; color: #006A92; font-size: 14px;}
 .span05{ display: inline; height: 20px; line-height: 20px; color: #000; font-size: 14px;}
 
-
+/*******************转播区域*********************/
+.zhuanboarea{ width: 480px; height: auto; max-height: 1000px; background-color: #F7F7F7; margin: 11px 0px 4px; padding: 6px 10px 0px; border: 1px solid #DEE3E3;}
+.zhbotop{ width: 480px; height: 21px; padding: 0 0 5px 0px;}
+.zhbospan1{ display: block; width: auto; padding-right: 5px; height: 21px; line-height: 21px; font-size: 12px; color: #999; float: left;}
+.zhboinput{ resize: none; display: block; width: 480px; height: auto; min-height: 47px; max-height: 300px; overflow: auto; padding: 5px 0; border: 1px solid #CDCDCD; line-height: 17px; font-size: 12px; color: #000;}
+.zhboinput:after{ width: 0; height: 0; clear: both; display: block; content: "."; visibility: hidden;}
+.zhbomood{ width: 480px; height: 35px;}
+.zhboface{ float: left; width: 16px; margin: 8px 5px 11px 5px; height: 16px; background-image: url("images/b1_20140716.png");}
+.checkarea{ float: left; margin: 8px 5px 11px 5px; width: 90px; height: 35px; font-size: 12px; color: #000;}
+.zhbocheck{ display: block; margin: 2px 5px; float: left;}
+.zhbobtnarea{ float: right; width: auto; height: 35px; font-size: 14px; }
+.zhubobtn{ cursor: pointer; display: block; border: 0; float: right; margin-top: 4px; width: 60px; height: 24px; border-radius: 5px; background-color: #44B7E0; color: #fff; font-weight: 700;}
+.zhbospan2{ display: block; float: right; width: auto; height: 35px; color: #999; margin-right: 20px; line-height: 35px;}
 
 /*319px;*/
 .contenttop1{ width: 269px; height: 88px; padding-top: 10px; margin-left: 15px;}
@@ -186,10 +202,10 @@ a:hover{ text-decoration: underline;}
 .contop7li{ width: 100%; height: 50px;}
 .contop7lileft{ float: left; width: 30px; height: 30px; margin-top: 5px;}
 .contop7liright{ float: left; width: 200px; height: 40px; padding-left: 10px;}
-.span15{ display: block; cursor: pointer; line-height: 20px; color: #006A92; }
-.span15:hover{ text-decoration: underline;}
+.span15{ cursor: pointer; line-height: 20px; color: #006A92; }
+/*.span15:hover{ text-decoration: underline;}*/
 .span1501{ cursor: pointer; line-height: 20px; color: #006A92; }
-.span1501:hover{ text-decoration: underline;}
+
 .span16{ line-height: 20px; color: #000;}
 
 
@@ -204,9 +220,17 @@ a:hover{ text-decoration: underline;}
 .critispan1{ display: block; float: left; padding-left: 8px; color: #759AAD; font-size: 13px; }
 
 .critiright{ float: right; width: auto; text-align: left; height: 30px;}
-.critili{ float: left; height: 30px; line-height: 30px;}
+.critili{ width: auto; float: left; height: 30px; line-height: 30px;}
+/*.critili:hover{ text-decoration: underline;}*/
+.zanclass{ float: left;}
+.zhuanboclass{ float: left;}
+.pinglunclass{ float: left;}
+.zhuanboclass{ float: left;}
+.zhuanboclass:hover{ text-decoration: underline;}
+.pinglunclass:hover{ text-decoration: underline;}
+.shoucang:hover{ text-decoration: underline;}
 .critilileftpic{ cursor: pointer; float: left; width: 15px; height: 15px; margin-top: 6px; background-image: url("images/b1_20140716.png"); background-position: -290px -114px; }
 .spancriti{ float: left; cursor: pointer; font-size: 13px; color: #006A92; }
-.spanstyle1{ font-size: 12px; padding: 0 10px; line-height: 30px;}
+.spanstyle1{ float: left; font-size: 12px; padding: 0 2px; line-height: 30px;}
 
 

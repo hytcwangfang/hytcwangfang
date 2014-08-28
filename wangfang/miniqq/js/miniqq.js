@@ -3,6 +3,10 @@ $(function(){
 	//更换背景
 	$("#fore").click(function(){
 		index--;
+		if(index < 0)
+		{
+			index = 6;
+		}
 		showbackground();
 	});
 	$("#next").click(function(){

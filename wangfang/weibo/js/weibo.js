@@ -45,7 +45,7 @@ $(function(){
 			html += '						<span class="spancriti">)</span>';
 			html += '						<span class="spanstyle1">|</span>';
 			html += '					</li>';
-			html += '					<li class="critili" linkid="transquanti">';
+			html += '					<li class="critili"  linkid="transquanti" shuoshuoid="1" openstate="false" showstate="true">';
 			html += '						<span class="span1501">转播(</span>';
 			html += '						<span class="span1501 zhuanbo">0</span>';
 			html += '						<span class="span1501">)</span>';
@@ -95,35 +95,117 @@ $(function(){
 		$(this).addClass("span10special");
 		$(".broadlist").hide();
 		$("#" + linkid).show();
-	}).hover(function(){
+		/*$(this).hover();*/
+	});
+	
+	$(".span10").hover(function(){
 		var clickstate = $(this).attr("clickstate");
 		if(clickstate == "false"){
 			$(this).css("border-bottom","2px solid #999");
 		}
+
+		/*$(".span10").click(function(){
+			var linkid = $(this).attr("linkid");
+			$(".span10").removeClass("span10special");
+			$(".span10").attr("clickstate","false");
+			$(this).attr("clickstate","true");
+			$(this).addClass("span10special");
+			$(".broadlist").hide();
+			$("#" + linkid).show();
+			$(this).hover().stop();
+		});
+		$(this).hover().start();*/
+
 	},function(){
 		$(this).css("border-bottom","");
 	});
 
 	//点赞，转播，评论
-	$(document).on("click",".critili",function(){
-
-		var linkid = $(this).attr("linkid");
-
-		//点赞
+	//点赞
+	$(document).on("click",".zanclass",function(){
+				
 		var val = $(this).find(".zanshu").html();
-		if(linkid == "likedegree"){
-			var cishu = $(this).find(".zanshu").attr("cishu");
-			if(cishu == "0"){
-				val = parseFloat(val) + 1;
-				$(this).find(".zanshu").html(val);
-				$(this).find(".zanshu").attr("cishu","1");
-				$(this).attr("title","已赞过")
-			}
-			else{
-				return;
-			}
+
+		var cishu = $(this).attr("cishu");
+		if(cishu == "0"){
+			val = parseFloat(val) + 1;
+			$(this).find(".zanshu").html(val);
+			$(this).attr("cishu","1");
+			$(this).attr("title","已赞过");
+			$(this).find(".critilileftpic").css("background-position","-306px -114px");
 		}
+		else{
+			val = parseFloat(val) - 1;
+			$(this).find(".zanshu").html(val);
+			$(this).attr("cishu","0");
+			$(this).attr("title","赞");
+			$(this).find(".critilileftpic").css("background-position","-290px -114px");
+		}
+		
 	});
+
+	//转播
+	$(document).on("click",".zhuanboclass",function(){
+
+		var idindex = $(this).attr("shuoshuoid");
+		var shuoshuoid = "shuoshuo" + idindex;
+		var openstate = $(this).attr("openstate");
+		var content = $("#" + shuoshuoid).find(".detailcontent").html();
+		var zhuanboid = "zhuanbo" + shuoshuoid;
+		var showstate = $(this).attr("showstate");
+		if(openstate == "false"){
+
+			$(this).attr("openstate","true");
+			$(this).attr("showstate","true");
+
+			var html = $("#" + shuoshuoid).find(".detailrighttext").html();
+			html += '<div id=' + zhuanboid + ' class="zhuanboarea">';
+			html += '	<div class="zhbotop">';
+			html += '		<span class="zhbospan1">转播本条微博</span>';
+			html += '		<a href="" class="zhbospan1 clearspan" style="color:#006A92;">[清空转播理由]</a>';
+			html += '	</div>';
+			html += '	<textarea class="zhboinput" value=' + content + '></textarea>';
+			html += '	<ul class="zhbomood">';
+			html += '		<li class="zhboface" style="background-position: -120px -33px;"></li>';
+			html += '		<li class="zhboface" style="background-position: -144px -33px;"></li>';
+			html += '		<li class="zhboface" style="background-position: -172px -33px;"></li>';
+			html += '		<li class="zhboface" style="background-position: 0px -33px;"></li>';
+			html += '		<li class="zhboface" style="background-position: -102px -184px;"></li>';
+			html += '		<li class="checkarea">';
+			html += '			<input type="checkbox" class="zhbocheck">';
+			html += '			<span>转播到空间</span>';
+			html += '		</li>';
+			html += '		<li class="zhbobtnarea">';
+			html += '			<input type="button" value="转播" class="zhubobtn">';
+			html += '			<span class="zhbospan2">还能输入28字</span>';
+			html += '		</li>';
+			html += '	</ul>';
+			html += '</div>';
+			$("#" + shuoshuoid).find(".detailrighttext").html(html);
+			
+
+			//alert($(this).attr("class"));
+		}
+		else if(openstate == "true"){
+
+				 if(showstate == "true"){
+						/*alert("1");*/
+						$("#" + zhuanboid).hide();
+						$(this).attr("showstate","false");
+					}
+					else{
+						$("#" + zhuanboid).show();
+						$(this).attr("showstate","true");
+					}
+			}
+		
+		$(".clearspan").click(function(){
+			$(this).parent().parent().find(".zhboinput").val(" ");
+		});	
+
+
+	});
+
 });
 
 var flashindex = 0;
