@@ -38,26 +38,32 @@ $(function(){
 			html += '					<span class="critispan1">' + month + '月' + day + '日 ' + hour + ':' + minute + '</span>';
 			html += '				</a>';
 			html += '				<ul class="critiright">';
-			html += '					<li class="critili" linkid="likedegree" title="赞">';
-			html += '						<div class="critilileftpic"></div>';
-			html += '						<span class="spancriti">(</span>';
-			html += '						<span cishu="0" class="spancriti zanshu">0</span>';
-			html += '						<span class="spancriti">)</span>';
-			html += '						<span class="spanstyle1">|</span>';
-			html += '					</li>';
-			html += '					<li class="critili"  linkid="transquanti" shuoshuoid="1" openstate="false" showstate="true">';
-			html += '						<span class="span1501">转播(</span>';
-			html += '						<span class="span1501 zhuanbo">0</span>';
-			html += '						<span class="span1501">)</span>';
+			html += '					<li class="critili">';
+			html += '						<div class="zanclass" title="赞" cishu="0">';
+			html += '							<div class="critilileftpic"></div>';
+			html += '							<span class="spancriti">(</span>';
+			html += '							<span class="spancriti zanshu">0</span>';
+			html += '							<span class="spancriti">)</span>';
+			html += '						</div>';
 			html += '						<span class="spanstyle1">|</span>';
 			html += '					</li>';
 			html += '					<li class="critili">';
-			html += '						<span class="span1501">评论(</span>';
-			html += '						<span class="span1501 pinglun">2219</span>';
-			html += '						<span class="span1501">)</span>';
+			html += '						<div class="zhuanboclass" shuoshuoid="1" firstclick="true" isclear="false" showstate="false">';
+			html += '							<span class="span1501">转播(</span>';
+			html += '							<span class="span1501 zhuanbo">0</span>';
+			html += '							<span class="span1501">)</span>';
+			html += '						</div>';
 			html += '						<span class="spanstyle1">|</span>';
 			html += '					</li>';
-			html += '					<li class="critili">';
+			html += '					 <li class="critili" shuoshuoid="1">';
+			html += '						<div class="pinglunclass">';
+			html += '							<span class="span1501">评论(</span>';
+			html += '							<span class="span1501 pinglun">0</span>';
+			html += '							<span class="span1501">)</span>';
+			html += '						</div>';
+			html += '						<span class="spanstyle1">|</span>';
+			html += '					</li>';
+			html += '					<li class="critili shoucang">';
 			html += '						<span class="span1501">收藏</span>';
 			html += '					</li>';
 			html += '				</ul>';
@@ -120,8 +126,8 @@ $(function(){
 		$(this).css("border-bottom","");
 	});
 
-	//点赞，转播，评论
-	//点赞
+	///点赞，转播，评论
+	//点赞+1/-1
 	$(document).on("click",".zanclass",function(){
 				
 		var val = $(this).find(".zanshu").html();
@@ -144,66 +150,173 @@ $(function(){
 		
 	});
 
-	//转播
+	//显示转播区域
 	$(document).on("click",".zhuanboclass",function(){
+
+		var firstclick = $(this).attr("firstclick");
+		var isclear = $(this).attr("isclear");
+		var showstate = $(this).attr("showstate");
 
 		var idindex = $(this).attr("shuoshuoid");
 		var shuoshuoid = "shuoshuo" + idindex;
-		var openstate = $(this).attr("openstate");
 		var content = $("#" + shuoshuoid).find(".detailcontent").html();
-		var zhuanboid = "zhuanbo" + shuoshuoid;
-		var showstate = $(this).attr("showstate");
-		if(openstate == "false"){
+		var zhuanboid = "zhuanbo" + idindex;
 
-			$(this).attr("openstate","true");
-			$(this).attr("showstate","true");
+		if(showstate == "false"){
 
-			var html = $("#" + shuoshuoid).find(".detailrighttext").html();
-			html += '<div id=' + zhuanboid + ' class="zhuanboarea">';
-			html += '	<div class="zhbotop">';
-			html += '		<span class="zhbospan1">转播本条微博</span>';
-			html += '		<a href="" class="zhbospan1 clearspan" style="color:#006A92;">[清空转播理由]</a>';
-			html += '	</div>';
-			html += '	<textarea class="zhboinput" value=' + content + '></textarea>';
-			html += '	<ul class="zhbomood">';
-			html += '		<li class="zhboface" style="background-position: -120px -33px;"></li>';
-			html += '		<li class="zhboface" style="background-position: -144px -33px;"></li>';
-			html += '		<li class="zhboface" style="background-position: -172px -33px;"></li>';
-			html += '		<li class="zhboface" style="background-position: 0px -33px;"></li>';
-			html += '		<li class="zhboface" style="background-position: -102px -184px;"></li>';
-			html += '		<li class="checkarea">';
-			html += '			<input type="checkbox" class="zhbocheck">';
-			html += '			<span>转播到空间</span>';
-			html += '		</li>';
-			html += '		<li class="zhbobtnarea">';
-			html += '			<input type="button" value="转播" class="zhubobtn">';
-			html += '			<span class="zhbospan2">还能输入28字</span>';
-			html += '		</li>';
-			html += '	</ul>';
-			html += '</div>';
-			$("#" + shuoshuoid).find(".detailrighttext").html(html);
-			
+			if(firstclick == "true" || isclear =="true" ){
 
-			//alert($(this).attr("class"));
-		}
-		else if(openstate == "true"){
+				$(this).attr("firstclick","false");
+				$(this).attr("showstate","true");
+				$(this).attr("isclear","false");
 
-				 if(showstate == "true"){
-						/*alert("1");*/
-						$("#" + zhuanboid).hide();
-						$(this).attr("showstate","false");
-					}
-					else{
-						$("#" + zhuanboid).show();
-						$(this).attr("showstate","true");
-					}
+				var html = $("#" + shuoshuoid).find(".detailrighttext").html();
+				html += '<div id=' + zhuanboid + ' class="zhuanboarea">';
+				html += '	<div class="zhbotop">';
+				html += '		<span class="zhbospan1">转播本条微博</span>';
+				html += '		<span class="zhbospan1 clearspan" shuoshuoid=' + idindex + ' style="color:#006A92;">[清空转播理由]</span>';
+				html += '	</div>';
+				html += '	<textarea class="zhboinput" shuoshuoid=' + idindex + ' value=' + content + '></textarea>';
+				html += '	<ul class="zhbomood">';
+				html += '		<li class="zhboface" style="background-position: -120px -33px;"></li>';
+				html += '		<li class="zhboface" style="background-position: -144px -33px;"></li>';
+				html += '		<li class="zhboface" style="background-position: -172px -33px;"></li>';
+				html += '		<li class="zhboface" style="background-position: 0px -33px;"></li>';
+				html += '		<li class="zhboface" style="background-position: -102px -184px;"></li>';
+				html += '		<li class="checkarea">';
+				html += '			<input type="checkbox" class="zhbocheck">';
+				html += '			<span>转播到空间</span>';
+				html += '		</li>';
+				html += '		<li class="zhbobtnarea">';
+				html += '			<input type="button" value="转播" shuoshuoid=' + idindex + ' class="zhubobtn">';
+				html += '			<span class="zhbospan2">还能输入28字</span>';
+				html += '		</li>';
+				html += '	</ul>';
+				html += '</div>';
+				$("#" + shuoshuoid).find(".detailrighttext").html(html);
+
 			}
+			else{
+
+				$("#" + zhuanboid).show();
+				$(this).attr("showstate","true");
+
+			}
+		}
+		else if(isclear =="true"){
+				$("#" + zhuanboid).remove();
+				$(this).attr("showstate","false");
+		}
+		else if(isclear =="false") {
+				$("#" + zhuanboid).hide();
+				$(this).attr("showstate","false");
+		}
+			
 		
 		$(".clearspan").click(function(){
-			$(this).parent().parent().find(".zhboinput").val(" ");
+			var idindex = $(this).attr("shuoshuoid");
+			$("#zhuanbo" + idindex).find(".zhboinput").val("");
+			$("#shuoshuo" + idindex).find(".zhuanboclass").attr("isclear","true");
+			$(this).hide();
 		});	
 
+		$(".zhboinput").blur(function(){
+			var idindex = $(this).attr("shuoshuoid");
+			var content = $("#shuoshuo" + idindex).find(".detailcontent").html();
+			var val = $(this).val();
+			if(val == ""){
+				$("#shuoshuo" + idindex).find(".zhuanboclass").attr("isclear","true");
+			}else{
+				$("#shuoshuo" + idindex).find(".zhuanboclass").attr("isclear","false");
+			}
 
+		});
+
+	});
+
+	//转播功能
+	$(document).on("click",".zhubobtn",function(){
+
+		var idindex = $(this).attr("shuoshuoid");
+		var content = $("#zhuanbo" + idindex).find(".zhboinput").val();
+		var zhuboshu = parseFloat($(this).find(".zhuanbo").html()) + 1;
+		var shuoshuoid = "shuoshuo" + idindex + "0" + zhuboshu;
+		var ct = new Date();
+		var month = ct.getMonth();
+		month = month + 1;
+		var day = ct.getDate();
+		var hour = ct.getHours();
+		var minute = ct.getMinutes();
+
+		if(content == ""){
+			return;
+		}
+									
+									
+		var html = '';
+			html += '<ul class="detailarea" id=' + shuoshuoid +'>';
+			html += '	<li class="detailareali">';
+			html += '		<div class="detailleftheadpic">';
+			html += '			<img src="css/images/100.jpg">';
+			html += '		</div>';
+			html += '		<div class="detailrighttext">';
+			html += '			<div class="detailtitle">';
+			html += '				<span class="span03">温迪</span>';
+			html += '				<ul class="biaoshilist">';
+			html += '					<li class="biaoshili"></li>';
+			html += '					<li class="biaoshili"></li>';
+			html += '				</ul>';
+			html += '			</div>';
+			html += '			<div class="detailcontent">';
+			html += '				<span class="span05">' + content + '</span>';
+			html += '			</div>';
+			html += '			<div class="critiarea">';
+			html += '				<a href="" class="critileft">';
+			html += '					<div class="pic1"></div>';
+			html += '					<span class="critispan1">' + month + '月' + day + '日 ' + hour + ':' + minute + '</span>';
+			html += '				</a>';
+			html += '				<ul class="critiright">';
+			html += '					<li class="critili">';
+			html += '						<div class="zanclass" title="赞" cishu="0">';
+			html += '							<div class="critilileftpic"></div>';
+			html += '							<span class="spancriti">(</span>';
+			html += '							<span class="spancriti zanshu">0</span>';
+			html += '							<span class="spancriti">)</span>';
+			html += '						</div>';
+			html += '						<span class="spanstyle1">|</span>';
+			html += '					</li>';
+			html += '					<li class="critili">';
+			html += '						<div class="zhuanboclass" shuoshuoid="1" firstclick="true" isclear="false" showstate="false">';
+			html += '							<span class="span1501">转播(</span>';
+			html += '							<span class="span1501 zhuanbo">0</span>';
+			html += '							<span class="span1501">)</span>';
+			html += '						</div>';
+			html += '						<span class="spanstyle1">|</span>';
+			html += '					</li>';
+			html += '					 <li class="critili" shuoshuoid="1">';
+			html += '						<div class="pinglunclass">';
+			html += '							<span class="span1501">评论(</span>';
+			html += '							<span class="span1501 pinglun">0</span>';
+			html += '							<span class="span1501">)</span>';
+			html += '						</div>';
+			html += '						<span class="spanstyle1">|</span>';
+			html += '					</li>';
+			html += '					<li class="critili shoucang">';
+			html += '						<span class="span1501">收藏</span>';
+			html += '					</li>';
+			html += '				</ul>';
+			html += '			</div>';
+			html += '		</div>';
+			html += '	</li>';
+			html += '</ul>';
+			var html2 = $("#broadcontent").html();
+			html = html + html2;
+			$("#broadcontent").html(html);
+			$("#shuoshuo" + idindex).find(".zhuanboclass").attr("showstate","false");
+			$("#zhuanbo" + idindex).remove();
+			$("#shuoshuo" + idindex).find(".zhuanboclass").attr("isclear","true");
+			
+											
 	});
 
 });

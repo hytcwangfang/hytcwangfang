@@ -4,16 +4,26 @@ div{ font-size: 12px;}
 ul,li{list-style: none;}
 a{ text-decoration: none; }
 
-#tiltle{width: 800px; height: 50px; border: 2px solid #a3a3a3; margin-top: 50px;}
-#titleleft{ height: 50px; line-height: 50px; font-size: 14px; color: #000; padding-left: 40px;}
-#indexlink{ width: 800px; height: 300px; margin-top: 10px;}
-#indexlink a{ display: block; float: left; width: auto; height: 24px; line-height: 24px; padding: 5px; margin-right: 8px; background:linear-gradient(#aaa,#ddd); border: 2px solid #000; border-radius: 5px; color: red;}
-#indexlink a:hover{ background:linear-gradient(#ddd,#aaa); color: red;}
-#indexlink li{ width: 800px; height: 34px; padding-left: 10px; font-size: 14px; float: left; margin-top: 20px;}
+#all{ width: 100%; height: 100%; overflow: auto; background-image: url("../images/u=1168924828,2686978188&fm=56.jpg"); background-repeat: no-repeat; background-size: 100% 100%;}
 
-#timearea{width: 380px; height: 30px; padding: 10px; border: 1px solid #ccc;}
+#tiltle{  margin: 50px auto; width: 100%; height: 50px; line-height: 50px; background-color: #ccc; text-align: center; font-size: 40px; color: #fff; font-weight: 700;}
+/*#titleleft{ height: 50px; line-height: 50px;padding-left: 40px;}*/
+
+#indexlink{ margin: 20px auto; width: 800px; height: auto; }
+#indexlink span{ display: block; width: 140px; text-align: center; margin: 46px auto; height: 50px; line-height: 50px; font-size: 16px; font-weight: 700; color: #666;}
+#indexlink span:hover{  color: #000;}
+#indexlink li{ width: 800px; height: auto; font-size: 14px; float: left; margin-top: 20px;}
+
+#indexlink:after{ width: 0px; height: 0px; display: block; content: "."; clear: both; visibility: hidden;}
+#indexlink li:after{ width: 0px; height: 0px; display: block; content: "."; clear: both; visibility: hidden;}
+.bgstyle{ display: block; float: left; width: 150px; margin: 10 5px; height: 140px; background-color: rgba(#000,0); background-image: url("../images/20111017111652.jpg"); background-size: 150px 140px; }
+
+.foot{ width: 800px; height: 70px; margin-top: 20px; background-color: #fff;}
+.specialli{ display: block;  margin: 0px auto; width: 110px; height: 46px; padding: 24px 0 0 40px; background-image: url("../images/20111017111652.jpg"); background-size: 150px 70px; color: #e6e6e6e; font-weight: 700;}
+
+#timearea{ display: none; width: 380px; height: 30px; padding: 10px; border: 1px solid #ccc;}
 #datetime{width: 200px; height: 30px; float: left; }
 #secondtime{width: 160px; height: 30px; float: right; }
-.timestyle{width: 20px; height: 30px; float: left; background-image: url("images/dig.png"); }
+.timestyle{width: 20px; height: 30px; float: left; background-image: url("../images/dig.png"); }
 .heng{background-position: 0 -330px;}
 .mao{background-position: 0 -301px;}

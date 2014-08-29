@@ -1,7 +1,43 @@
 $(function(){
 	//setInterval('showdigtime()',1000);
 	showdigtime();
+	//showbgimg();
 });
+
+var index=0;
+
+function showbgimg(){
+
+	var images={};
+	//$("body").css({"float":"right","left":"1000px"});
+	//$("body").animate({"left":"0px"});
+	images[0] = "url('images/u=1168924828,2686978188&fm=56.jpg')";
+	images[1] = "url('images/21645313_1370326968840.jpg')";
+	images[2] = "url('images/21645967_1370327655544.jpg')";
+	images[3] = "url('images/21645967_1370327655553.jpg')";
+	images[4] = "url('images/20130713090657_YZhGk.jpeg')";
+	images[5] = "url('images/20130714110957_yfPA2.jpeg')";
+	images[6] = "url('images/20130714111129_cA4Na.jpeg')";
+	images[7] = "url('images/20130714111346_w2SfM.jpeg')";
+	images[8] = "url('images/20130714111500_GKteQ.jpeg')";
+	images[9] = "url('images/20130714111655_TzSzG.jpeg')";
+	images[10] = "url('images/20130714111830_GdiU5.jpeg')";
+	images[11] = "url('images/20130714111848_sVaWd.jpeg')";
+	images[12] = "url('images/b483b9014a90f603a7565b543b12b31bb151edc5.jpg')";
+	images[13] = "url('images/f51249540923dd5427bd607bd309b3de9d8248dc.jpg')";
+	images[14] = "url('images/u=1026740529,601810000&fm=56.jpg')";
+	images[15] = "url('images/14912197_182902835000_2.jpg')";
+	images[16] = "url('images/u=3581477079,232079083&fm=56.jpg')";
+	images[17] = "url('images/u=4241458329,2326796741&fm=56.jpg')";
+	images[18] = "url('images/yanyazhiting009.jpg')";
+	images[19] = "url('images/9668328_082257492000_2.jpg')";
+	index++;
+	$("#all").css("background-image", images[index%20]);
+	
+	//$("body").css("float","left");
+	//$("body").animate({"width":"0px"});
+	
+	setTimeout('showbgimg()',2000);}
 
 function showdigtime(){
 	var ct = new Date();
